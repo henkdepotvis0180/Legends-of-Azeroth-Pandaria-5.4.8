@@ -995,7 +995,7 @@ void RandomPlayerbotMgr::PrepareAddclassCache()
             continue;
         QueryResult results = CharacterDatabase.PQuery(
             "SELECT guid, race FROM characters "
-            "WHERE account >= %u AND account <= %u AND class = '%u' AND online = 0 AND "
+            "WHERE account >= {} AND account <= {} AND class = '{}' AND online = 0 AND "
             "guid NOT IN ( SELECT guid FROM guild_member ) "
             "ORDER BY account DESC",
             minAccountId, maxAccountId, claz);

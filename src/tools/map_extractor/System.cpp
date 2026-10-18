@@ -1193,7 +1193,7 @@ void ExtractCameraFiles(int locale, bool basicLocale)
     printf("Extracted %u camera files\n", count);
 }
 
-void ExtractDB2Files(int l, bool basicLocale)
+void ExtractDB2Files(int l)
 {
     printf("Extracting db2 files...\n");
 
@@ -1206,11 +1206,9 @@ void ExtractDB2Files(int l, bool basicLocale)
     {
         std::string outputPath = output_path;
         outputPath += "/dbc/";
-        if (!basicLocale)
-        {
-            outputPath += Locales[l];
-            outputPath += "/";
-        }
+        outputPath += Locales[l];
+        outputPath += "/";
+        CreateDir(outputPath);
 
         std::string filename;
 
@@ -1466,7 +1464,7 @@ int main(int argc, char * arg[])
 
         printf("\n");
         ExtractDBCFiles(i, FirstLocale < 0);
-        ExtractDB2Files(i, FirstLocale < 0);
+        ExtractDB2Files(i);
 
         if (FirstLocale < 0)
         {

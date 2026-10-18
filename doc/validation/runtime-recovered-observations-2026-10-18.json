@@ -1,0 +1,48 @@
+{
+  "status": "historical_pass_observed_output_files_lost",
+  "provenance": "Reconstructed from successful tool outputs retained in the conversation; original runtime JSON, binaries, generated data and raw logs were removed by workspace maintenance before durable backup. Not a new execution in the recovered workspace.",
+  "original_started_at_utc": "2026-10-18T09:08:07Z",
+  "bot_module_enabled": true,
+  "bot_autologin": false,
+  "mmap_enabled": true,
+  "full_mmaps_available_during_original_run": true,
+  "world_ready_after_seconds": 18.3,
+  "world_greeting_bytes": 49,
+  "steady_run_seconds": 60.02,
+  "both_alive_after_steady_run": true,
+  "world_exit_code": 0,
+  "auth_exit_code": 0,
+  "elapsed_seconds": 84.68,
+  "database_pools_logged": {
+    "auth": true,
+    "characters": true,
+    "world": true,
+    "playerbots": true
+  },
+  "random_bot_accounts": 2,
+  "random_bot_characters": 22,
+  "distinct_character_classes": 11,
+  "mmap_generator_exit_code": 0,
+  "mmap_validation": {
+    "maps": 219,
+    "tiles": 6745,
+    "failures": 0
+  },
+  "dbc_loaded": 174,
+  "db2_loaded": 26,
+  "cameras_extracted": 27,
+  "native_mmap_debug": {
+    "successful_load_events": 191,
+    "warning_events": 21,
+    "already_loaded_warnings": 4,
+    "missing_tile_warnings": 17,
+    "missing_source_map_events": 8
+  },
+  "ingame_bots_tested": false,
+  "available_runtime_backup": false,
+  "current_workspace_tests": {
+    "appearance_cases_passed": 9,
+    "specialization_roles_passed": 34
+  },
+  "required_to_reproduce": "Rebuild Linux binaries, download/extract client data, regenerate mmaps, create fresh databases and rerun the native smoke test; preserve outputs before closing the environment."
+}

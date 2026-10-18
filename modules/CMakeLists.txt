@@ -92,6 +92,10 @@ endif()
 # Création de la bibliothèque statique "modules"
 add_library(modules STATIC ${MODULES_SOURCES})
 
+if(USE_COREPCH)
+    target_precompile_headers(modules PRIVATE ${PRIVATE_PCH_HEADER})
+endif()
+
 # Fonction pour récupérer récursivement tous les sous-dossiers
 function(get_all_subdirectories result curdir)
     file(GLOB_RECURSE children LIST_DIRECTORIES true ${curdir}/*)
@@ -124,3 +128,12 @@ target_link_libraries(modules
 )
 
 add_dependencies(modules revision.h)
+
+# Ship the configuration template needed by the enabled playerbots module.
+if(PLAYERBOTS)
+    if(UNIX)
+        install(FILES mod_playerbots/config/playerbots.conf.dist DESTINATION ${CONF_DIR})
+    else()
+        install(FILES mod_playerbots/config/playerbots.conf.dist DESTINATION "${CMAKE_INSTALL_PREFIX}")
+    endif()
+endif()
