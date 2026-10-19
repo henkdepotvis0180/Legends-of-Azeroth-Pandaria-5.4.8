@@ -83,6 +83,18 @@ AiPlayerbot.Enabled = 1
 # Enable random bot system
 AiPlayerbot.RandomBotAutologin = 1
 
+# Start automatic world-bot logins only when a real player character is in world.
+# Bot sessions, the character-selection screen and logging-out players do not count.
+# Already online bots are not forcibly logged out when the last player leaves.
+AiPlayerbot.RandomBotLoginOnlyWithPlayers = 1
+
+# Opt-in natural progression: only level-1 world bots receive a starting level.
+# Existing levels, XP, inventory and quests are retained; periodic factory resets are skipped.
+# Automatic world-bot selection excludes death knights; existing characters are not deleted.
+AiPlayerbot.RandomBotNaturalProgression = 0
+AiPlayerbot.RandomBotStartingMinLevel = 4
+AiPlayerbot.RandomBotStartingMaxLevel = 10
+
 # Random bot account
 # Please ensure that RandomBotAccountCount is greater than (MaxRandomBots / 10 + AddClassAccountPoolSize)
 AiPlayerbot.RandomBotAccountCount = 200

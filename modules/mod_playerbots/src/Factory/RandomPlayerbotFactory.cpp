@@ -347,12 +347,17 @@ Player* RandomPlayerbotFactory::CreateRandomBot(WorldSession* session, Classes c
         }
     }
 
+    bool excludeCheck = (race == RACE_TAUREN) || (race == RACE_DRAENEI) ||
+        (gender == GENDER_FEMALE && race != RACE_NIGHTELF && race != RACE_UNDEAD_PLAYER);
+    if (skinColors.empty() || faces.empty() || hairs.empty() || (!excludeCheck && facialHairTypes.empty()))
+    {
+        TC_LOG_ERROR("playerbots", "No complete character appearance data for race {} and gender {}", race, gender);
+        return nullptr;
+    }
+
     uint8 skinColor = skinColors[std::rand() % skinColors.size()];
     std::pair<uint8, uint8> face = faces[std::rand() % faces.size()];
     std::pair<uint8, uint8> hair = hairs[std::rand() % hairs.size()];
-
-    bool excludeCheck = (race == RACE_TAUREN) || (race == RACE_DRAENEI) ||
-        (gender == GENDER_FEMALE && race != RACE_NIGHTELF && race != RACE_UNDEAD_PLAYER);
     uint8 facialHair = excludeCheck ? 0 : facialHairTypes[std::rand() % facialHairTypes.size()];
 
     WorldPacket p;

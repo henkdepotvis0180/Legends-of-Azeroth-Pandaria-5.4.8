@@ -48,7 +48,8 @@ void PriestNonCombatStrategy::InitTriggers(std::vector<TriggerNode*>& triggers)
     triggers.push_back(
         new TriggerNode("party member medium health",
                         NextAction::array(0, new NextAction("renew on party", ACTION_LIGHT_HEAL + 9),
-                                          new NextAction("penance on party", ACTION_LIGHT_HEAL + 8), NULL)));
+                                          new NextAction("penance on party", ACTION_LIGHT_HEAL + 8),
+                                          new NextAction("flash heal on party", ACTION_LIGHT_HEAL + 7), NULL)));
 
     triggers.push_back(
         new TriggerNode("party member almost full health",

@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "checkpoint": 3,
+  "client_build": 18414,
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/",
+  "files": [
+    {
+      "file": "Data/enUS/locale-enUS.MPQ",
+      "bytes": 446509242,
+      "sha256": "77a8a8fa6aeb141439b74417917a27b194220c611d2109de63b30fe604ec3690",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    }
+  ],
+  "integrity_note": "Size and MPQ signature checked; recorded SHA-256 identifies received bytes, not an independent upstream digest.",
+  "date": "2026-10-18",
+  "durable_archive_saved": true,
+  "archive_filename": "MoP-18414-checkpoint-03-locale-enUS.tar.gz",
+  "archive_validation": {
+    "archive_bytes": 314808898,
+    "archive_sha256": "246b2f7b28ebc81a5fab062477ef8974930f778f87ff4e4387ba1a128ced715a",
+    "archived_file_verified": true,
+    "archive_contains_only_completed_file_and_two_documents": true
+  },
+  "extraction_performed": false
+}

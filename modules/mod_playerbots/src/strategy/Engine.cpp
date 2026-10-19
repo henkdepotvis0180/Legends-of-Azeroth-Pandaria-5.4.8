@@ -5,6 +5,10 @@
 
 #include "Engine.h"
 
+#include <cstdarg>
+#include <cstdio>
+#include <cstring>
+
 #include "Action.h"
 #include "Event.h"
 #include "Helper.h"
@@ -153,6 +157,7 @@ bool Engine::DoNextAction(Unit* unit, uint32 depth, bool minimal)
     // Update triggers and push default actions
     ProcessTriggers(minimal);
     PushDefaultActions();
+    LogAction("TRACE tick minimal=%u queue=%u", uint32(minimal), uint32(queue.Size()));
 
     uint32 iterations = 0;
     uint32 iterationsPerTick = queue.Size() * (minimal ? 2 : sPlayerbotAIConfig->iterationsPerTick);
@@ -247,6 +252,8 @@ bool Engine::DoNextAction(Unit* unit, uint32 depth, bool minimal)
     if (!actionExecuted)
         LogAction("No actions executed");
 
+    if (diagnosticTicksRemaining)
+        --diagnosticTicksRemaining;
     queue.RemoveExpired();  // Clean up expired actions in the queue
     return actionExecuted;
 }
@@ -596,6 +603,21 @@ bool Engine::ListenAndExecute(Action* action, Event event)
 
 void Engine::LogAction(char const* format, ...)
 {
+    if (diagnosticTicksRemaining &&
+        (strncmp(format, "A:", 2) == 0 || strncmp(format, "TRACE", 5) == 0 ||
+            strncmp(format, "Multiplier", 10) == 0 || strncmp(format, "No actions", 10) == 0))
+    {
+        char diagnosticLine[1024];
+        va_list diagnosticArgs;
+        va_start(diagnosticArgs, format);
+        vsnprintf(diagnosticLine, sizeof(diagnosticLine), format, diagnosticArgs);
+        va_end(diagnosticArgs);
+        diagnosticTrace += diagnosticLine;
+        diagnosticTrace += "\n";
+        while (diagnosticTrace.size() > 6000)
+            diagnosticTrace.erase(0, diagnosticTrace.find('\n') + 1);
+    }
+
     if (testMode)
     {
         Player* bot = botAI->GetBot();

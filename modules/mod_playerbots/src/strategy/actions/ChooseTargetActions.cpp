@@ -28,6 +28,9 @@ bool AttackEnemyFlagCarrierAction::isUseful()
 
 bool AttackAnythingAction::isUseful()
 {
+    if (botAI->HasRealPlayerMaster())
+        return false;
+
     if (!botAI->AllowActivity(GRIND_ACTIVITY))  // Bot not allowed to be active
         return false;
 
@@ -81,6 +84,10 @@ bool DropTargetAction::Execute(Event event)
 
 bool AttackAnythingAction::Execute(Event event)
 {
+    // Recheck at execution: a cached grind target may predate joining the party.
+    if (botAI->HasRealPlayerMaster())
+        return false;
+
     bool result = AttackAction::Execute(event);
     if (result)
     {

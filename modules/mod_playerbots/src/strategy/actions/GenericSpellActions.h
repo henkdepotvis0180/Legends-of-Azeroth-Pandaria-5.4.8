@@ -30,6 +30,8 @@ public:
     NextAction** getPrerequisites() override;
 
 protected:
+    bool PrepareSpellMovement(uint32 spellId, Unit* target);
+
     std::string spell;
     float range;
 };

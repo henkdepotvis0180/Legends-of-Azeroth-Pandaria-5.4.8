@@ -2,6 +2,7 @@
 
 #include "Player.h"
 #include "PlayerbotSpec.h"
+#include "EquipmentSelectionPolicy.h"
 
 #include <bitset>
 #include <map>
@@ -588,7 +589,8 @@ bool RandomItemManager::CanEquipArmor(Player* bot, ItemTemplate const* proto)
         AddItemStats(proto->ItemStat[j].ItemStatType, sp, ap, tank);
     }
 
-    return CheckItemStats(clazz, sp, ap, tank);
+    return playerbots::AllowStatlessStarterEquipment(level, proto->Quality, sp, ap, tank) ||
+        CheckItemStats(clazz, sp, ap, tank);
 }
 
 bool RandomItemManager::CanEquipWeapon(Player* bot, ItemTemplate const* proto)
@@ -698,9 +700,8 @@ uint32 RandomItemManager::FindBestItemForLevelAndEquip(Player* bot, InventoryTyp
     uint32 level = (uint32)bot->GetLevel();
     uint32 bot_class = bot->GetClass();
     uint32 bot_race = bot->GetRace();
-    int32 delta = std::min(level, 10u);
-
-    for (uint32 requiredLevel = bot->GetLevel(); requiredLevel > std::max((int32)bot->GetLevel() - delta, 0); requiredLevel--)
+    for (int32 requiredLevel = static_cast<int32>(level);
+         requiredLevel >= playerbots::MinimumEquipmentLevel(level); --requiredLevel)
     {
         std::mt19937 gen(std::chrono::system_clock::now().time_since_epoch().count());
         auto& items = _equipCacheNew[requiredLevel][invType];
@@ -780,7 +781,9 @@ uint32 RandomItemManager::FindBestItemForLevelAndEquip(Player* bot, InventoryTyp
                     AddItemStats(proto->ItemStat[j].ItemStatType, sp, ap, tank);
                 }
 
-                if (!CheckItemStats((Classes)bot_class, sp, ap, tank)) continue;
+                if (!playerbots::AllowStatlessStarterEquipment(level, proto->Quality, sp, ap, tank) &&
+                    !CheckItemStats((Classes)bot_class, sp, ap, tank))
+                    continue;
             }
 
             // ok ?

@@ -1,0 +1,43 @@
+{
+  "checkpoint": 18,
+  "status": "passed",
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/Data/expansion3.MPQ",
+  "source_file": "Data/expansion3.MPQ",
+  "expected_source_bytes": 1076317751,
+  "chunk_bytes": 450000000,
+  "expected_parts": 3,
+  "parts": [
+    {
+      "number": 1,
+      "filename": "MoP-18414-checkpoint-18-expansion3.MPQ.part001",
+      "start_byte": 0,
+      "end_byte": 449999999,
+      "bytes": 450000000,
+      "sha256": "57ff144651c0afafe977fd3dee2799ca272f2907722730a863d85b6400198e2b",
+      "durable_saved": true
+    },
+    {
+      "number": 2,
+      "filename": "MoP-18414-checkpoint-18-expansion3.MPQ.part002",
+      "start_byte": 450000000,
+      "end_byte": 899999999,
+      "bytes": 450000000,
+      "sha256": "2c3993d65eac1a08eb51259b0ad08b83f5f81f6eca83f9b905649a6a5d105e17",
+      "durable_saved": true
+    },
+    {
+      "number": 3,
+      "filename": "MoP-18414-checkpoint-18-expansion3.MPQ.part003",
+      "start_byte": 900000000,
+      "end_byte": 1076317750,
+      "bytes": 176317751,
+      "sha256": "c3d4bbe7040a0463c1a3f1bcb1f2e41a576a241c9aff38c5aa4666eb241e1e53",
+      "durable_saved": true
+    }
+  ],
+  "integrity_note": "Exact HTTP ranges, sizes, MPQ signature and received SHA-256 hashes checked; no independent upstream SHA-256 available.",
+  "source_bytes": 1076317751,
+  "source_sha256": "39195ef132ebe8d9b72d28e3e705044ee7f9b4869fca028f2f438613aef146d4",
+  "assembled_source_verified": true,
+  "completed_at_utc": "2026-10-18T18:41:33Z"
+}

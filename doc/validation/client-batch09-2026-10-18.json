@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "checkpoint": 9,
+  "client_build": 18414,
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/",
+  "files": [
+    {
+      "file": "Data/wow-update-base-17266.MPQ",
+      "bytes": 681260822,
+      "sha256": "08cbedc5e9bf9c85103c79d57902431fbd87dd892395861a2c0e0b9b9cc6f6b8",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    }
+  ],
+  "integrity_note": "Size and MPQ signature checked; recorded SHA-256 identifies received bytes, not an independent upstream digest.",
+  "date": "2026-10-18",
+  "durable_archive_saved": true,
+  "archive_validation": {
+    "archive_test_exit_code": 0,
+    "archived_file_hash_verified": true,
+    "volumes": [
+      {
+        "filename": "MoP-18414-checkpoint-09-base17266.7z.001",
+        "bytes": 471859200,
+        "sha256": "ca921db9f4939a129d5385a1d2d5ce3934ea9f12d1b4466004a311245fea797d"
+      },
+      {
+        "filename": "MoP-18414-checkpoint-09-base17266.7z.002",
+        "bytes": 202270210,
+        "sha256": "3625558122e95797ace35fb70f07e597848c9616fa372f4b9225bff6e124bd67"
+      }
+    ]
+  },
+  "extraction_performed": false
+}

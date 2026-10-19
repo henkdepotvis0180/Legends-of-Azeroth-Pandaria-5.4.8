@@ -12,6 +12,7 @@ public:
     static ObjectGuid GetRandomBot();
     static void Init();
     void Refresh();
+    uint32 LearnClassSpells();
     void Randomize(bool incremental);
     void ClearEverything();
 

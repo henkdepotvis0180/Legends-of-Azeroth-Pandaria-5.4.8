@@ -1,6 +1,7 @@
 #include "BotFactory.h"
 
 #include <random>
+#include <set>
 #include <utility>
  
 #include "AccountMgr.h"
@@ -26,6 +27,8 @@
 #include "RandomPlayerbotFactory.h"
 #include "RandomItemManager.h"
 #include "SharedDefines.h"
+#include "SpellInfo.h"
+#include "SpellMgr.h"
 #include "SpellAuraDefines.h"
 #include "World.h"
   
@@ -168,6 +171,59 @@ void BotFactory::Randomize(bool incremental)
     bot->SaveToDB(false);
 }
  
+uint32 BotFactory::LearnClassSpells()
+{
+    ChrClassesEntry const* classEntry = sChrClassesStore.LookupEntry(bot->GetClass());
+    if (!classEntry)
+        return 0;
+
+    // The optional player_class_spells table is incomplete in the shipped world DB.
+    // Use the same client skill-ability source as the core's class-spell learner.
+    std::set<uint32> spells;
+    for (uint32 i = 0; i < sSkillLineAbilityStore.GetNumRows(); ++i)
+    {
+        SkillLineAbilityEntry const* ability = sSkillLineAbilityStore.LookupEntry(i);
+        if (!ability)
+            continue;
+        if (ability->ClassMask && !(ability->ClassMask & bot->GetClassMask()))
+            continue;
+        if (ability->RaceMask && !(ability->RaceMask & bot->GetRaceMask()))
+            continue;
+        spells.insert(ability->Spell);
+    }
+
+    // Specialization-exclusive spells must not leak into other specs or pre-spec levels.
+    std::set<uint32> exclusiveSpells;
+    std::set<uint32> ownSpecSpells;
+    for (SpecializationSpellsEntry const* entry : sSpecializationSpellsStore)
+    {
+        exclusiveSpells.insert(entry->SpellID);
+        if (bot->GetLevel() >= 10 && entry->SpecID == bot->GetTalentSpecialization())
+            ownSpecSpells.insert(entry->SpellID);
+    }
+
+    uint32 learned = 0;
+    for (uint32 spellId : spells)
+    {
+        SpellInfo const* info = sSpellMgr->GetSpellInfo(spellId);
+        if (!info || !info->SpellLevel || info->SpellLevel > bot->GetLevel() || bot->HasSpell(spellId))
+            continue;
+        if (info->SpellFamilyName != classEntry->spellfamily || !bot->IsSpellFitByClassAndRace(spellId))
+            continue;
+        if (sDBCManager.GetTalentSpellCost(info->GetFirstRankSpell()->Id) > 0)
+            continue;
+        if (exclusiveSpells.count(spellId) && !ownSpecSpells.count(spellId))
+            continue;
+        if (!SpellMgr::IsSpellValid(info, bot, false))
+            continue;
+
+        bot->LearnSpell(spellId, false);
+        if (bot->HasSpell(spellId))
+            ++learned;
+    }
+    return learned;
+}
+
 void BotFactory::Refresh()
 {
     InitPet();

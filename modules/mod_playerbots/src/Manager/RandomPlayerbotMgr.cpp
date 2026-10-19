@@ -50,6 +50,7 @@
 #include "SharedDefines.h"
 #include "Unit.h"
 #include "World.h"
+#include "WorldSession.h"
 
 RandomPlayerbotMgr::RandomPlayerbotMgr()
     : PlayerbotHolder(),
@@ -84,6 +85,57 @@ void RandomPlayerbotMgr::ScheduleTeleport(uint32 bot, uint32 time)
     SetEventValue(bot, "teleport", 1, time);
 }
 
+bool RandomPlayerbotMgr::HasRealPlayerOnline() const
+{
+    for (auto const& entry : sWorld->GetAllSessions())
+    {
+        WorldSession* session = entry.second;
+        if (!session || session->IsBot() || session->isLogingOut())
+            continue;
+
+        Player* player = session->GetPlayer();
+        if (player && player->IsInWorld())
+            return true;
+    }
+    return false;
+}
+
+bool RandomPlayerbotMgr::ShouldAutoLoginBots() const
+{
+    return sPlayerbotAIConfig->enabled && sPlayerbotAIConfig->randomBotAutologin &&
+        (!sPlayerbotAIConfig->randomBotLoginOnlyWithPlayers || HasRealPlayerOnline());
+}
+
+bool RandomPlayerbotMgr::IsAllowedProgressionBot(uint32 bot) const
+{
+    if (!sPlayerbotAIConfig->randomBotNaturalProgression)
+        return true;
+
+    CharacterCacheEntry const* entry = sCharacterCache->GetCharacterCacheByGuid(
+        ObjectGuid::Create<HighGuid::Player>(bot));
+    return entry && entry->Class != CLASS_DEATH_KNIGHT;
+}
+
+void RandomPlayerbotMgr::ApplyNaturalProgression(Player* bot)
+{
+    if (!sPlayerbotAIConfig->randomBotNaturalProgression || !IsRandomBot(bot) ||
+        bot->GetClass() == CLASS_DEATH_KNIGHT)
+        return;
+
+    // Existing levelled characters keep their earned level, XP, inventory and quests.
+    if (bot->GetLevel() == 1)
+    {
+        uint32 maxLevel = std::min(sPlayerbotAIConfig->randomBotStartingMaxLevel,
+            sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
+        uint32 minLevel = std::min(sPlayerbotAIConfig->randomBotStartingMinLevel, maxLevel);
+        bot->GiveLevel(urand(minLevel, maxLevel));
+    }
+
+    // Use the core's normal XP rewards. Do not add artificial XP here.
+    bot->RemovePlayerFlag(PLAYER_FLAGS_NO_XP_GAIN);
+    bot->SaveToDB(false);
+}
+
 void RandomPlayerbotMgr::UpdateAIInternal(uint32 elapsed, bool /*minimal*/)
 {
     if (totalPmo)
@@ -91,8 +143,11 @@ void RandomPlayerbotMgr::UpdateAIInternal(uint32 elapsed, bool /*minimal*/)
 
     totalPmo = sPerformanceMonitor->start(PERF_MON_TOTAL, "RandomPlayerbotMgr::FullTick");
 
-    if (!sPlayerbotAIConfig->randomBotAutologin || !sPlayerbotAIConfig->enabled)
+    if (!ShouldAutoLoginBots())
+    {
+        SetNextCheckDelay(1000);
         return;
+    }
 
     uint32 maxAllowedBotCount = GetEventValue(0, "bot_count");
     if (!maxAllowedBotCount || (maxAllowedBotCount < sPlayerbotAIConfig->minRandomBots ||
@@ -205,6 +260,8 @@ uint32 RandomPlayerbotMgr::AddRandomBots()
             {
                 Field* fields = result->Fetch();
                 uint64 guid = fields[0].GetInt64();
+                if (!IsAllowedProgressionBot(guid))
+                    continue;
                 if (GetEventValue(guid, "add"))
                     continue;
 
@@ -272,6 +329,9 @@ bool RandomPlayerbotMgr::ProcessBot(uint32 bot)
     Player* player = GetPlayerBot(bot);
     PlayerbotAI* botAI = player ? GET_PLAYERBOT_AI(player) : nullptr;
     ObjectGuid botGUID = ObjectGuid::Create<HighGuid::Player>(bot);
+
+    if (!player && !IsAllowedProgressionBot(bot))
+        return false;
 
     uint32 isValid = GetEventValue(bot, "add");
     if (!isValid)
@@ -502,6 +562,12 @@ void RandomPlayerbotMgr::Clear(Player* bot)
 
 void RandomPlayerbotMgr::RandomizeFirst(Player* bot)
 {
+    if (sPlayerbotAIConfig->randomBotNaturalProgression && IsRandomBot(bot))
+    {
+        ApplyNaturalProgression(bot);
+        return;
+    }
+
     uint32 maxLevel = sPlayerbotAIConfig->randomBotMaxLevel;
     maxLevel = std::min(maxLevel, sWorld->getIntConfig(CONFIG_MAX_PLAYER_LEVEL));
 
@@ -565,6 +631,14 @@ void RandomPlayerbotMgr::RandomizeFirst(Player* bot)
 
 void RandomPlayerbotMgr::Randomize(Player* bot)
 {
+    if (sPlayerbotAIConfig->randomBotNaturalProgression && IsRandomBot(bot))
+    {
+        // A periodic or requested randomize must not reset earned XP or replace gear.
+        ApplyNaturalProgression(bot);
+        ScheduleRandomize(bot->GetGUID().GetCounter(), 62208000);
+        return;
+    }
+
     if (GET_PLAYERBOT_AI(bot))
             GET_PLAYERBOT_AI(bot)->Reset(true);
 
@@ -667,7 +741,7 @@ void RandomPlayerbotMgr::GetBots()
         {
             Field* fields = result->Fetch();
             uint32 bot = fields[0].GetUInt32();
-            if (GetEventValue(bot, "add"))
+            if (IsAllowedProgressionBot(bot) && GetEventValue(bot, "add"))
                 _currentBots.push_back(bot);
 
             if (_currentBots.size() >= maxAllowedBotCount)
@@ -882,6 +956,9 @@ void RandomPlayerbotMgr::OnBotLoginInternal(Player* const bot)
 
 void RandomPlayerbotMgr::OnPlayerLogin(Player* player)
 {
+    if (player->GetSession() && !player->GetSession()->IsBot())
+        SetNextCheckDelay(0);
+
     uint32 botsNearby = 0;
 
     for (PlayerBotMap::const_iterator it = GetPlayerBotsBegin(); it != GetPlayerBotsEnd(); ++it)
@@ -995,7 +1072,7 @@ void RandomPlayerbotMgr::PrepareAddclassCache()
             continue;
         QueryResult results = CharacterDatabase.PQuery(
             "SELECT guid, race FROM characters "
-            "WHERE account >= %u AND account <= %u AND class = '%u' AND online = 0 AND "
+            "WHERE account >= {} AND account <= {} AND class = '{}' AND online = 0 AND "
             "guid NOT IN ( SELECT guid FROM guild_member ) "
             "ORDER BY account DESC",
             minAccountId, maxAccountId, claz);

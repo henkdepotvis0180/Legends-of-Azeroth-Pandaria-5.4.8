@@ -1,0 +1,383 @@
+{
+  "status": "passed",
+  "imports": [
+    {
+      "file": "sql/base/auth.sql",
+      "database": "moprun_auth",
+      "sha256": "e07b71ee92f73b3f12550b7aeca68c907848bd7ea28a405b6a5efe739bdd3258"
+    },
+    {
+      "file": "sql/base/characters.sql",
+      "database": "moprun_characters",
+      "sha256": "73665e366f88e174dddb3fcc8049e1122fcfb7fea48e9ce3f786dca7f0002e3c"
+    },
+    {
+      "file": "world_548_20240722.sql",
+      "database": "moprun_world",
+      "sha256": "aa8a76b1c05a660f1609273812aac7a5610cc6e60d34be50adc4bb879f58b9e7"
+    },
+    {
+      "file": "sql/updates/master/auth/2026_09_15_rbac_command_permissions.sql",
+      "database": "moprun_auth",
+      "sha256": "2e35e074937917c26611026d482458142c3903055fe9bd43b3b3629b35394dc5"
+    },
+    {
+      "file": "sql/updates/world/2024_07_23_00_fix-visual-waypoint-visibility.sql",
+      "database": "moprun_world",
+      "sha256": "56bd5faef8f3a0da68156707fc309d587a7d3d2a178a8ac07bc8e31e0da04a60"
+    },
+    {
+      "file": "sql/updates/world/2024_07_24_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "0ac9ee714fdd7b223417344071d7937687e0d0556544a6f75c47b82fc2929126"
+    },
+    {
+      "file": "sql/updates/world/2024_07_27_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "c90a4176b8c9cead538d6390ea2544c9cfaaf4296280d4b0b85188fbebdbd276"
+    },
+    {
+      "file": "sql/updates/world/2024_07_29_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "be7a00ca6c7d706acae634c265c70638bc30e4875ab335afd9a803e391e082ca"
+    },
+    {
+      "file": "sql/updates/world/2024_08_04_00_alliance_pandria_intro.sql",
+      "database": "moprun_world",
+      "sha256": "805afa0beeb4bbdd570a670b3dd97d7273650846961f15b62c2dd3cd7cbc4f95"
+    },
+    {
+      "file": "sql/updates/world/2024_08_11_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "2976c0b108f247ffa4a08c236ed6639f2d0cf9e3e4b37732713ee3ae2e9672a3"
+    },
+    {
+      "file": "sql/updates/world/2024_08_18_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "7cced27e7ed5e18f2166b91081353a069bd289fb41a87f1b22606cb1e48f66b0"
+    },
+    {
+      "file": "sql/updates/world/2024_08_24_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "7350deece950c1f289fb0f94d5ad2349ed662e635f7d5f1a6073014c914c70dd"
+    },
+    {
+      "file": "sql/updates/world/2024_08_24_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "26b600537411e446d380ae9fee7753a57cfd6d0cb1da265ca9f6853ac7cc8c76"
+    },
+    {
+      "file": "sql/updates/world/2024_08_26_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "aaae65e76b3d7a845f663b9096eda5af8761c80a510effcb0837af4c93b40d01"
+    },
+    {
+      "file": "sql/updates/world/2024_09_24_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "f757d8480279b3b27e5420d72eca3557593a60c67cbdd5f946be013dbc0d459c"
+    },
+    {
+      "file": "sql/updates/world/2024_10_16_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "9cdd2960c95ae09520958973421477d05337782e540c0c7c96fac579db89b640"
+    },
+    {
+      "file": "sql/updates/world/2024_10_16_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "4bb4ab43e973f6f46342a2d78bf335ab8a7ed953555ef9f0e46177fb7e1729cb"
+    },
+    {
+      "file": "sql/updates/world/2024_11_12_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "d04fb808e7df0706c78219b7e638a474a011fe5ebc43b680bac05fc1f2ede7d3"
+    },
+    {
+      "file": "sql/updates/world/2024_11_19_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "0c3c2efcc69152b1455e6bd4b96119390063e8a418a3bd323637adda63d0359e"
+    },
+    {
+      "file": "sql/updates/world/2025_02_25_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "89afb1db449f2fe04ffe36f800ec5be9c28da3ac261db658d7a07fb7219c4fb9"
+    },
+    {
+      "file": "sql/updates/world/2026_01_19_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "f9aeefabe6b83bcfbcbbe6ff45b493d4f05e3ff81281540f1a11f93c4c484dc6"
+    },
+    {
+      "file": "sql/updates/world/2026_08_28_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "6b0745e4ba0e3087e538d21ced49bb41448b7c43ce17fbbbe40b4b3334e01663"
+    },
+    {
+      "file": "sql/updates/world/2026_08_30_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "407ec45b4491970966fdd6f8915cccde232fde48549232ad1b1f020478318662"
+    },
+    {
+      "file": "sql/updates/world/2026_08_31_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "b2aeb57ce4c3b135c790823e44db0ecbda7f0f58cb77af7daa53029dbbda46fc"
+    },
+    {
+      "file": "sql/updates/world/2026_09_03_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "5defb9bc601bad153e1773c9ce34d535d753de329358be1ef5effa447992b07f"
+    },
+    {
+      "file": "sql/updates/world/2026_09_03_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "31b69919b038a69a1bb772ae6aa9fa14618a06c1746197c846221ac969c01459"
+    },
+    {
+      "file": "sql/updates/world/2026_09_04_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "eaa65d817558ce78f9e99a33423a32ebc305345ddbfc536219f1fb1aad3a717a"
+    },
+    {
+      "file": "sql/updates/world/2026_09_04_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "264f70bee8ee40ada9d0e317adb4b5369020caf5580723d0144c738780744079"
+    },
+    {
+      "file": "sql/updates/world/2026_09_05_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "7051ac7b81abad7a10ad39de28ce4e6e6bca38d7b715adbb6c67827cff06c06b"
+    },
+    {
+      "file": "sql/updates/world/2026_09_06_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "53e1ade88a7d1eacb1b9f74b7898ab8dbab19cab34c78bd765ea5e0a5d4bf6d9"
+    },
+    {
+      "file": "sql/updates/world/2026_09_07_00_spline-chain.sql",
+      "database": "moprun_world",
+      "sha256": "e6f9eaab4823ff8f416f3d978bd86cdaad0e52d177f47166fe928d953df9a9b3"
+    },
+    {
+      "file": "sql/updates/world/2026_09_07_01_formation_groupai.sql",
+      "database": "moprun_world",
+      "sha256": "d5fa6a310af51b691ef3ffc53cd750d9885111981609662a39110f9adc301c80"
+    },
+    {
+      "file": "sql/updates/world/2026_09_08_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "e58055ee075aebf556216304910c1d8497994e2e6b0f7d68938b5d9232d6f982"
+    },
+    {
+      "file": "sql/updates/world/2026_09_10_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "ccf9d13f496f03b1918f0c083d8815e3f2e2a4e4078946152b82aa6a7a7d2bd7"
+    },
+    {
+      "file": "sql/updates/world/2026_09_11_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "7fdb702f271b72d73977490b93b62494fb5a37ff5433423ab6206c7ad5ffcf84"
+    },
+    {
+      "file": "sql/updates/world/2026_09_11_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "16d38bd0c35165fcfbf1e5fc1795bb46bcd292566b47f46a3a564a4c6b5e9c26"
+    },
+    {
+      "file": "sql/updates/world/2026_09_21_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "69c1b73c6cb62df758adcc7c0c1ed7905aa905dc3dd1918cfbbfabd031f6a2c3"
+    },
+    {
+      "file": "sql/updates/world/2026_09_21_01_world.sql",
+      "database": "moprun_world",
+      "sha256": "eda0f23a1daad4b17649d26877f0740e3da6769cdc6ed7a60f5bc06ccc27f373"
+    },
+    {
+      "file": "sql/updates/world/2026_09_25_02_stagecoach_auto_movement_idempotent.sql",
+      "database": "moprun_world",
+      "sha256": "a9939ca29c7f1244d685ea8f66112948154fd0fa99972e81a77dbb125ab0c830"
+    },
+    {
+      "file": "sql/updates/world/2026_10_01_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "ecd2d7771eac52e348a5fc1f6ea3214d9c67fd8bd9b3331673ce1167bf27936b"
+    },
+    {
+      "file": "sql/updates/world/2026_10_11_00_world.sql",
+      "database": "moprun_world",
+      "sha256": "851ff1942d080b2eefeadb8530fe50b01617fed8e7a0e51675e9496727dac65e"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_database_full.sql",
+      "database": "moprun_playerbots",
+      "sha256": "28ca6a83df840381a00df63c8ef1e3fcf7e05d35e4061fc4c1d72724e1163c4c"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_custom_strategy.sql",
+      "database": "moprun_playerbots",
+      "sha256": "593dbe1a4dabf7288e7240c0630964c0d37a7e1288ef985aaf9807076b6f03ca"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_db_store.sql",
+      "database": "moprun_playerbots",
+      "sha256": "bcbf7e2daa2518ddadff0d4fe29c0e82a94a62989ee6a1d7785a283db11ad7af"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_equip_cache.sql",
+      "database": "moprun_playerbots",
+      "sha256": "5500b27cfa0d901ac5438b05b9a6882cc261286a746f4565152bb240f86734ba"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_guild_tasks.sql",
+      "database": "moprun_playerbots",
+      "sha256": "84c010f8521c5afddb582dc6b86304e881fbe276cacaa85bd5c058f75e76ee60"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_item_info_cache.sql",
+      "database": "moprun_playerbots",
+      "sha256": "d40c398f6cbfbbafdd751b133580b10768e8efa682528db26b6bf4b5b76466ae"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_preferred_mounts.sql",
+      "database": "moprun_playerbots",
+      "sha256": "fbd61d48bd4b2939d30539651e52dab2f37f8595a4d7429eb426424ddd05f2e9"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_rarity_cache.sql",
+      "database": "moprun_playerbots",
+      "sha256": "9dcbdace7bd386489b0439fe0639ff689d92fdcd766eff3a46cc0387324b9b56"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_rnditem_cache.sql",
+      "database": "moprun_playerbots",
+      "sha256": "6c3b5bdc46a8edf04c694addbf03bf621882c69e2d4ee3073af78f25992f8c68"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_tele_cache.sql",
+      "database": "moprun_playerbots",
+      "sha256": "6024de05040fc479cbd8cc3cfe0c184a668d03f357fb8d87507a869c8fbd7644"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_travelnode.sql",
+      "database": "moprun_playerbots",
+      "sha256": "7cc36729eb05d224d93beaab38028faa2566db6012e361642658dc0c07ebb179"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_travelnode_link.sql",
+      "database": "moprun_playerbots",
+      "sha256": "93cb9e3582609fe9c910fcda4c810eef2095ca6544a0b84224cd25fb13bdf916"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_travelnode_path.sql",
+      "database": "moprun_playerbots",
+      "sha256": "d5100d3675bf278a9f311bbf161e587306217980146e137e06df9509e176f2cb"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_weightscale_data.sql",
+      "database": "moprun_playerbots",
+      "sha256": "44dede6729d8b7e8871ca25ee1c0d8d20c0ec091a9233001a05b9ca09abd593d"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_weightscales.sql",
+      "database": "moprun_playerbots",
+      "sha256": "57f3a6d5c0929b730e53be4aa594b0efe9a7557f88f3e8de9c633116eeaa5ef4"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/playerbots_zone_path.sql",
+      "database": "moprun_playerbots",
+      "sha256": "3ce23261bac686aaf1ec2209d6a9713135b3921f4f95b89ccaf29c856f580a62"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/updates.sql",
+      "database": "moprun_playerbots",
+      "sha256": "05007b1e118bedf24fff0e333c04057c48a633219802e488d828fcdece6dffed"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/updates_include.sql",
+      "database": "moprun_playerbots",
+      "sha256": "f2fcfa924d7d1e36c3192e62fca2645bbe7f0b2bcc2d15b42a1465f897cf7195"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/base/version_db_playerbots.sql",
+      "database": "moprun_playerbots",
+      "sha256": "2a54b6268969178e7339ab602069072a19c27a17d9255a1e1cbc2ee712c04cbb"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/updates/db_playerbots/2024_08_07_00.sql",
+      "database": "moprun_playerbots",
+      "sha256": "1424be0f0a457630d6466658e2fba973b455c8d053efc51fe746844b6a3d46f9"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/playerbots/updates/db_playerbots/2024_11_25_00.sql",
+      "database": "moprun_playerbots",
+      "sha256": "9ad4468df0bbe0b0142322699bba96f37c3e3ba9998bebcb977886402e7ba2ec"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/characters/playerbots_arena_team_names.sql",
+      "database": "moprun_characters",
+      "sha256": "c95698da81313764acd8e0c0bed7cb33526f494a0213e518c908e556ff8264fb"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/characters/playerbots_guild_names.sql",
+      "database": "moprun_characters",
+      "sha256": "cc898c89d15da98c89ebe18fb46c208d546628b54ee66ddb89751c12f37bfdc5"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/characters/playerbots_names.sql",
+      "database": "moprun_characters",
+      "sha256": "d8e0491c4002843a68b05497d928382ef67316ee5afc22d9da6d0a1522827d60"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/world/world_charsections_dbc.sql",
+      "database": "moprun_world",
+      "sha256": "54caffcb60e1a9db751b62822fb6de9be9e953ee179ce4e3143598983fcae5df"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/world/world_emotetextsound_dbc.sql",
+      "database": "moprun_world",
+      "sha256": "bdc736aa06d88f9cfbc7a122483ae9bac48b09cfdffa5d2d1aec3972bd6a49d2"
+    },
+    {
+      "file": "modules/mod_playerbots/data/sql/world/world_playerbots_rpg_races.sql",
+      "database": "moprun_world",
+      "sha256": "318393f4cefcd3a2e268839fa7fc53fd77ed5ab3748e42943dc889b2a1f80b40"
+    }
+  ],
+  "skipped_updates": [
+    {
+      "file": "2024_09_06_00_characters_auctionbidders.sql",
+      "reason": "already recorded in base dump"
+    },
+    {
+      "file": "2024_09_06_01_characters_auctionhouse_houseid.sql",
+      "reason": "already recorded in base dump"
+    }
+  ],
+  "databases": {
+    "auth": {
+      "name": "moprun_auth",
+      "tables": 45
+    },
+    "characters": {
+      "name": "moprun_characters",
+      "tables": 132
+    },
+    "world": {
+      "name": "moprun_world",
+      "tables": 237
+    },
+    "playerbots": {
+      "name": "moprun_playerbots",
+      "tables": 31
+    }
+  },
+  "world_sha256": "aa8a76b1c05a660f1609273812aac7a5610cc6e60d34be50adc4bb879f58b9e7",
+  "mysql_version": "8.0.46-0ubuntu0.24.04.3",
+  "creature_templates": 57517,
+  "quests": 18028,
+  "bot_names": 100000,
+  "accounts": 0,
+  "characters": 0,
+  "inventory_rows": 0,
+  "random_bot_events": 0,
+  "realm_address": "127.0.0.1"
+}

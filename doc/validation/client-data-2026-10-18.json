@@ -1,0 +1,362 @@
+{
+  "date": "2026-10-18",
+  "status": "download_and_extraction_passed_with_warnings",
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/",
+  "source_manifest": "wow-18414-E68C6C849BBD16D2A8A153AFC865062F.mfil",
+  "manifest_md5": "e68c6c849bbd16d2a8a153afc865062f",
+  "recipe_reference": "https://github.com/mangostools/WoWClientRebuilder",
+  "recipe_commit": "e41e905208bc2ff20f0007da2240b67c883d725c",
+  "client_build": 18414,
+  "extracted_internal_data_build": 18273,
+  "locale": "enUS",
+  "downloaded_files": 56,
+  "downloaded_bytes": 23435297608,
+  "file_size_checks_passed": true,
+  "download_scope": "Client Data/ and Windows Updates/ from the pinned Blizzard manifest. Does not assemble Wow.exe or a ready-to-play Windows client.",
+  "map_extractor_dbc_exit_code": 0,
+  "dbc_files": 393,
+  "db2_files": 58,
+  "required_dbc_layout_checks": 174,
+  "required_db2_layout_checks": 26,
+  "map_extractor_maps_exit_code": 0,
+  "map_files": 9691,
+  "map_header_version": 10,
+  "map_header_checks_passed": true,
+  "previously_missing_startup_map_present": true,
+  "vmap_extractor_exit_code": 0,
+  "vmap_assembler_exit_code": 0,
+  "vmap_tree_files": 216,
+  "vmap_tile_files": 5150,
+  "vmap_model_files": 12123,
+  "vmap_signature": "VMAP_4.3",
+  "vmap_signature_checks_passed": true,
+  "vmap_extractor_missing_source_messages": 110,
+  "vmap_extractor_missing_sources": [
+    "Aaaaaaaaa\\Testdonotcommit4.m2",
+    "Character\\Naga_\\Female\\Nagafemaledeathskeleton.m2",
+    "Character\\Naga_\\Male\\Nagamaledeathskeleton.m2",
+    "Wingv2_Elevator_Onyxia.m2",
+    "World\\Detail\\Drkbus02.m2",
+    "World\\Detail\\Drkbus04.m2",
+    "World\\Dreaming\\Passivedoodads\\Flowers\\Dreambellflower02.m2",
+    "World\\Dreaming\\Passivedoodads\\Flowers\\Dreampurpleflower03.m2",
+    "World\\Dreaming\\Passivedoodads\\Flowers\\Dreamspinningflower01.m2",
+    "World\\Expansion01\\Doodads\\Coilfang\\Activedoodads\\Energytower\\Coilfang_Towers_E_Particle.m2",
+    "World\\Expansion01\\Doodads\\Hellfirecitadel\\Demonwing\\Passivedoodads\\Summon_Door\\Hellfire_Dw_Summondoor.m2",
+    "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Shield_01.m2",
+    "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_01.m2",
+    "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_02.m2",
+    "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_03.m2",
+    "World\\Expansion03\\Doodads\\Twilighthammer\\Banners\\Twilighthammerbanner01.m2",
+    "World\\Generic\\Quilboar\\Passive Doodads\\Leantos\\Razorfen_Leanto03.m2",
+    "World\\Goober\\Testdonotcommit8.m2",
+    "World\\Maps\\Collin\\Collin.wdt",
+    "World\\Maps\\CraigTest\\CraigTest.wdt",
+    "World\\Maps\\DarkmoonCarousel\\DarkmoonCarousel.wdt",
+    "World\\Maps\\Deephomeceiling\\Deephomeceiling.wdt",
+    "World\\Maps\\ElevatorSpawnTest\\ElevatorSpawnTest.wdt",
+    "World\\Maps\\ExteriorTest\\ExteriorTest.wdt",
+    "World\\Maps\\GoldRushBG\\GoldRushBG_28_34_obj0.adt, size = 0!",
+    "World\\Maps\\GoldRushBG\\GoldRushBG_29_34_obj0.adt, size = 0!",
+    "World\\Maps\\GoldRushBG\\GoldRushBG_30_34_obj0.adt, size = 0!",
+    "World\\Maps\\GoldRushBG\\GoldRushBG_31_34_obj0.adt, size = 0!",
+    "World\\Maps\\LevelDesignLand-DevOnly\\LevelDesignLand-DevOnly.wdt",
+    "World\\Maps\\MistsCTF3\\MistsCTF3.wdt",
+    "World\\Maps\\Monastery\\Monastery.wdt",
+    "World\\Maps\\PVPZone02\\PVPZone02.wdt",
+    "World\\Maps\\QA_DVD\\QA_DVD.wdt",
+    "World\\Maps\\ScottTest\\ScottTest.wdt",
+    "World\\Maps\\StormwindPrison\\StormwindPrison.wdt",
+    "World\\Maps\\Sunwell5Man\\Sunwell5Man.wdt",
+    "World\\Maps\\TheBattleforGilneas\\TheBattleforGilneas.wdt",
+    "World\\Maps\\Transport 2033864\\Transport 2033864.wdt",
+    "World\\Maps\\Transport 2033865\\Transport 2033865.wdt",
+    "World\\Maps\\Transport 203732\\Transport 203732.wdt",
+    "World\\Maps\\Transport 203861\\Transport 203861.wdt",
+    "World\\Maps\\Transport 203862\\Transport 203862.wdt",
+    "World\\Maps\\Transport164871\\Transport164871.wdt",
+    "World\\Maps\\Transport175080\\Transport175080.wdt",
+    "World\\Maps\\Transport176231\\Transport176231.wdt",
+    "World\\Maps\\Transport176244\\Transport176244.wdt",
+    "World\\Maps\\Transport176310\\Transport176310.wdt",
+    "World\\Maps\\Transport176495\\Transport176495.wdt",
+    "World\\Maps\\Transport177233\\Transport177233.wdt",
+    "World\\Maps\\Transport181645\\Transport181645.wdt",
+    "World\\Maps\\Transport186238\\Transport186238.wdt",
+    "World\\Maps\\Transport187038\\Transport187038.wdt",
+    "World\\Maps\\Transport187263\\Transport187263.wdt",
+    "World\\Maps\\Transport192241\\Transport192241.wdt",
+    "World\\Maps\\Transport192242\\Transport192242.wdt",
+    "World\\Maps\\Transport197195\\Transport197195.wdt",
+    "World\\Maps\\Transport197347\\Transport197347.wdt",
+    "World\\Maps\\Transport197348\\Transport197348.wdt",
+    "World\\Maps\\Transport197349-2\\Transport197349-2.wdt",
+    "World\\Maps\\Transport197349\\Transport197349.wdt",
+    "World\\Maps\\Transport197350\\Transport197350.wdt",
+    "World\\Maps\\Transport200100\\Transport200100.wdt",
+    "World\\Maps\\Transport200101\\Transport200101.wdt",
+    "World\\Maps\\Transport200102\\Transport200102.wdt",
+    "World\\Maps\\Transport200103\\Transport200103.wdt",
+    "World\\Maps\\Transport201834\\Transport201834.wdt",
+    "World\\Maps\\Transport203729\\Transport203729.wdt",
+    "World\\Maps\\Transport203730\\Transport203730.wdt",
+    "World\\Maps\\Transport203858\\Transport203858.wdt",
+    "World\\Maps\\Transport203859\\Transport203859.wdt",
+    "World\\Maps\\Transport203860\\Transport203860.wdt",
+    "World\\Maps\\Transport203863\\Transport203863.wdt",
+    "World\\Maps\\Transport20808\\Transport20808.wdt",
+    "World\\Maps\\Transport218599\\Transport218599.wdt",
+    "World\\Maps\\Transport218600\\Transport218600.wdt",
+    "World\\Maps\\Transport_AllianceAirshipBG\\Transport_AllianceAirshipBG.wdt",
+    "World\\Maps\\Transport_HordeAirshipBG\\Transport_HordeAirshipBG.wdt",
+    "World\\Maps\\Transport_Menethil_Valgarde\\Transport_Menethil_Valgarde.wdt",
+    "World\\Maps\\Transport_Moa'ki_Kamagua\\Transport_Moa'ki_Kamagua.wdt",
+    "World\\Maps\\Transport_Moa'ki_Unu'pe\\Transport_Moa'ki_Unu'pe.wdt",
+    "World\\Maps\\Transport_Orgrimmar_Warsong_Hold\\Transport_Orgrimmar_Warsong_Hold.wdt",
+    "World\\Maps\\Transport_Orgrimmar_to_Thunderbluff\\Transport_Orgrimmar_to_Thunderbluff.wdt",
+    "World\\Maps\\Transport_Siege_of_Orgrimmar_Alliance\\Transport_Siege_of_Orgrimmar_Alliance.wdt",
+    "World\\Maps\\Transport_Siege_of_Orgrimmar_Horde\\Transport_Siege_of_Orgrimmar_Horde.wdt",
+    "World\\Maps\\Transport_Stormwind_Valiance_Keep\\Transport_Stormwind_Valiance_Keep.wdt",
+    "World\\Maps\\Transport_Tirisfal _Vengeance_Landing\\Transport_Tirisfal _Vengeance_Landing.wdt",
+    "World\\Maps\\development\\development.wdt",
+    "World\\Maps\\development_nonweighted\\development_nonweighted.wdt",
+    "World\\Maps\\test\\test.wdt",
+    "World\\Maps\\unused\\unused.wdt",
+    "World\\Wmo\\Band\\Final_Stage.wmo",
+    "World\\Wmo\\Test\\Blendedmattest.wmo"
+  ],
+  "mmap_smoke_exit_code": 0,
+  "mmap_smoke_tile": "0000_43_31.mmtile",
+  "mmap_smoke_tile_bytes": 952668,
+  "mmap_version": 7,
+  "detour_version": 7,
+  "full_mmap_generation_completed": false,
+  "native_worldserver_retested": false,
+  "ingame_bots_tested": false,
+  "files": [
+    {
+      "file": "Data/alternate.MPQ",
+      "bytes": 151735120
+    },
+    {
+      "file": "Data/expansion1.MPQ",
+      "bytes": 1426915825
+    },
+    {
+      "file": "Data/expansion2.MPQ",
+      "bytes": 2690192921
+    },
+    {
+      "file": "Data/expansion3.MPQ",
+      "bytes": 1076317751
+    },
+    {
+      "file": "Data/expansion4.MPQ",
+      "bytes": 1561756396
+    },
+    {
+      "file": "Data/interface.MPQ",
+      "bytes": 309366229
+    },
+    {
+      "file": "Data/itemtexture.MPQ",
+      "bytes": 801459489
+    },
+    {
+      "file": "Data/misc.MPQ",
+      "bytes": 811676948
+    },
+    {
+      "file": "Data/model.MPQ",
+      "bytes": 1177530975
+    },
+    {
+      "file": "Data/sound.MPQ",
+      "bytes": 2229581838
+    },
+    {
+      "file": "Data/texture.MPQ",
+      "bytes": 3067289916
+    },
+    {
+      "file": "Data/world.MPQ",
+      "bytes": 3365020722
+    },
+    {
+      "file": "Data/base-Win.MPQ",
+      "bytes": 31096584
+    },
+    {
+      "file": "Data/enUS/expansion1-speech-enUS.MPQ",
+      "bytes": 44074629
+    },
+    {
+      "file": "Data/enUS/expansion2-speech-enUS.MPQ",
+      "bytes": 122517188
+    },
+    {
+      "file": "Data/enUS/expansion3-speech-enUS.MPQ",
+      "bytes": 116134250
+    },
+    {
+      "file": "Data/enUS/expansion4-speech-enUS.MPQ",
+      "bytes": 121081939
+    },
+    {
+      "file": "Data/enUS/locale-enUS.MPQ",
+      "bytes": 446509242
+    },
+    {
+      "file": "Data/enUS/speech-enUS.MPQ",
+      "bytes": 265931293
+    },
+    {
+      "file": "Data/wow-update-base-16016.MPQ",
+      "bytes": 349778641
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16016.MPQ",
+      "bytes": 17117045
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16048.MPQ",
+      "bytes": 78228
+    },
+    {
+      "file": "Data/wow-update-base-16048.MPQ",
+      "bytes": 756189
+    },
+    {
+      "file": "Data/wow-update-base-16057.MPQ",
+      "bytes": 12806
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16057.MPQ",
+      "bytes": 4048
+    },
+    {
+      "file": "Data/wow-update-base-16309.MPQ",
+      "bytes": 579482392
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16309.MPQ",
+      "bytes": 28185853
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16357.MPQ",
+      "bytes": 3597
+    },
+    {
+      "file": "Data/wow-update-base-16357.MPQ",
+      "bytes": 9294
+    },
+    {
+      "file": "Data/wow-update-base-16516.MPQ",
+      "bytes": 1126065580
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16516.MPQ",
+      "bytes": 42934050
+    },
+    {
+      "file": "Data/wow-update-base-16650.MPQ",
+      "bytes": 137452881
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16650.MPQ",
+      "bytes": 426652
+    },
+    {
+      "file": "Data/wow-update-base-16844.MPQ",
+      "bytes": 275245678
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16844.MPQ",
+      "bytes": 18365842
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16965.MPQ",
+      "bytes": 304317
+    },
+    {
+      "file": "Data/wow-update-base-16965.MPQ",
+      "bytes": 12853172
+    },
+    {
+      "file": "Data/wow-update-base-17116.MPQ",
+      "bytes": 563001
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17116.MPQ",
+      "bytes": 8763
+    },
+    {
+      "file": "Data/wow-update-base-17266.MPQ",
+      "bytes": 681260822
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17266.MPQ",
+      "bytes": 44857975
+    },
+    {
+      "file": "Data/wow-update-base-17325.MPQ",
+      "bytes": 216873161
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17325.MPQ",
+      "bytes": 6357736
+    },
+    {
+      "file": "Data/wow-update-base-17345.MPQ",
+      "bytes": 15005476
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17345.MPQ",
+      "bytes": 31622
+    },
+    {
+      "file": "Data/wow-update-base-17538.MPQ",
+      "bytes": 4050067
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17538.MPQ",
+      "bytes": 90684
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17645.MPQ",
+      "bytes": 145060
+    },
+    {
+      "file": "Data/wow-update-base-17645.MPQ",
+      "bytes": 29897097
+    },
+    {
+      "file": "Data/wow-update-base-17688.MPQ",
+      "bytes": 595649
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17688.MPQ",
+      "bytes": 4547
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17898.MPQ",
+      "bytes": 53973
+    },
+    {
+      "file": "Data/wow-update-base-17898.MPQ",
+      "bytes": 4551246
+    },
+    {
+      "file": "Data/wow-update-base-18273.MPQ",
+      "bytes": 3869711
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-18273.MPQ",
+      "bytes": 86074
+    },
+    {
+      "file": "Updates/wow-0-18414-Win-final.MPQ",
+      "bytes": 21729424
+    }
+  ]
+}

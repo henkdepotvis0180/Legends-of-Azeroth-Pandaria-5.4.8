@@ -5,6 +5,7 @@
 ** Made into a module by Micrah https://github.com/milestorme/
 */
 
+#include "BotFactory.h"
 #include "Chat.h"
 #include "ChannelMgr.h"
 #include "Config.h"
@@ -174,6 +175,21 @@ class PlayerbotsPlayerScript : public PlayerScript
 {
 public:
     PlayerbotsPlayerScript() : PlayerScript("PlayerbotsPlayerScript") {}
+
+    void OnLevelChanged(Player* player, uint8 /*oldLevel*/) override
+    {
+        if (!player->GetSession()->IsBot())
+            return;
+        PlayerbotAI* ai = GET_PLAYERBOT_AI(player);
+        if (!ai)
+            return;
+
+        BotFactory factory(player, player->GetLevel());
+        if (factory.LearnClassSpells())
+            ai->GetAiObjectContext()->Reset();
+        ai->ResetStrategies();
+    }
+
 
     void OnLogin(Player* player) override
     {
