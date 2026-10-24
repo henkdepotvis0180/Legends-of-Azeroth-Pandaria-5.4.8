@@ -171,7 +171,7 @@ void Usage(char const* prg)
         "%s -[var] [value]\n"\
         "-i set input path\n"\
         "-o set output path\n"\
-        "-e extract only MAP(1)/DBC(2) - standard: both(3)\n"\
+        "-e extraction flags: MAP(1), DBC/DB2(2), CAMERA(4); combine flags, default 7\n"\
         "-f height stored as int (less map size but lost some accuracy) 1 by default\n"\
         "-b target build (default %u)\n"\
         "Example: %s -f 0 -i \"c:\\games\\game\"", prg, CONF_TargetBuild, prg);
@@ -184,7 +184,7 @@ void HandleArgs(int argc, char* arg[])
     {
         // i - input path
         // o - output path
-        // e - extract only MAP(1)/DBC(2) - standard both(3)
+        // e - extraction flags: MAP(1), DBC/DB2(2), CAMERA(4); default all(7)
         // f - use float to int conversion
         // h - limit minimum height
         // b - target client build
@@ -215,7 +215,7 @@ void HandleArgs(int argc, char* arg[])
                 if (c + 1 < argc)                            // all ok
                 {
                     CONF_extract = atoi(arg[c++ + 1]);
-                    if (!(CONF_extract > 0 && CONF_extract < 4))
+                    if (CONF_extract <= 0 || (CONF_extract & ~(EXTRACT_MAP | EXTRACT_DBC | EXTRACT_CAMERA)))
                         Usage(arg[0]);
                 }
                 else
@@ -1193,7 +1193,7 @@ void ExtractCameraFiles(int locale, bool basicLocale)
     printf("Extracted %u camera files\n", count);
 }
 
-void ExtractDB2Files(int l, bool basicLocale)
+void ExtractDB2Files(int l)
 {
     printf("Extracting db2 files...\n");
 
@@ -1206,11 +1206,9 @@ void ExtractDB2Files(int l, bool basicLocale)
     {
         std::string outputPath = output_path;
         outputPath += "/dbc/";
-        if (!basicLocale)
-        {
-            outputPath += Locales[l];
-            outputPath += "/";
-        }
+        outputPath += Locales[l];
+        outputPath += "/";
+        CreateDir(outputPath);
 
         std::string filename;
 
@@ -1466,7 +1464,7 @@ int main(int argc, char * arg[])
 
         printf("\n");
         ExtractDBCFiles(i, FirstLocale < 0);
-        ExtractDB2Files(i, FirstLocale < 0);
+        ExtractDB2Files(i);
 
         if (FirstLocale < 0)
         {

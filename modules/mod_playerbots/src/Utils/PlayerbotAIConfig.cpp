@@ -17,6 +17,7 @@
 
 #include "PlayerbotAIConfig.h"
 
+#include <algorithm>
 #include <iostream>
 
 #include "Config.h"
@@ -136,6 +137,10 @@ bool PlayerbotAIConfig::Initialize()
         pvpProhibitedAreaIds);
  
     randomBotAutologin = sConfigMgr->GetBoolDefault("AiPlayerbot.RandomBotAutologin", true);
+    randomBotNaturalProgression = sConfigMgr->GetBoolDefault("AiPlayerbot.RandomBotNaturalProgression", false);
+    randomBotStartingMinLevel = std::clamp(sConfigMgr->GetIntDefault("AiPlayerbot.RandomBotStartingMinLevel", 4), 2, 90);
+    randomBotStartingMaxLevel = std::clamp(sConfigMgr->GetIntDefault("AiPlayerbot.RandomBotStartingMaxLevel", 10), static_cast<int>(randomBotStartingMinLevel), 90);
+    randomBotLoginOnlyWithPlayers = sConfigMgr->GetBoolDefault("AiPlayerbot.RandomBotLoginOnlyWithPlayers", true);
     randomBotAccountPrefix = sConfigMgr->GetStringDefault("AiPlayerbot.RandomBotAccountPrefix", "rndbot");
     randomBotAccountCount = sConfigMgr->GetIntDefault("AiPlayerbot.RandomBotAccountCount", 200);
     maxAddedBotsPerClass = sConfigMgr->GetIntDefault("AiPlayerbot.MaxAddedBotsPerClass", 50);

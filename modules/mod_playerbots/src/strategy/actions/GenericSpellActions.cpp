@@ -18,6 +18,9 @@
 #include "GenericSpellActions.h"
 
 #include "Event.h"
+#include "MotionMaster.h"
+#include "SpellInfo.h"
+#include "SpellMgr.h"
 //#include "ItemTemplate.h"
 #include "ObjectDefines.h"
 #include "Opcodes.h"
@@ -77,7 +80,57 @@ bool CastSpellAction::Execute(Event event)
         return botAI->CastSpell(castId, bot);
     }
 
-    return botAI->CastSpell(spell, GetTarget());
+    Unit* target = GetTarget();
+    uint32 spellId = AI_VALUE2(uint32, "spell id", spell);
+    if (!PrepareSpellMovement(spellId, target))
+        return false;
+
+    return botAI->CastSpell(spell, target);
+}
+
+bool CastSpellAction::PrepareSpellMovement(uint32 spellId, Unit* target)
+{
+    SpellInfo const* spellInfo = sSpellMgr->GetSpellInfo(spellId);
+    if (!spellInfo)
+        return false;
+
+    // A pet cast must not stop its owner from moving.
+    if (Pet* pet = bot->GetPet())
+        if (pet->HasSpell(spellId))
+            return true;
+
+    // Do not manipulate movement for an unavailable, higher-level ability.
+    if (!bot->HasSpell(spellId))
+        return false;
+
+    if (!bot->isMoving())
+        return true;
+
+    bool requiresStationary = spellInfo->CalcCastTime(bot->GetLevel()) > 0 ||
+        spellInfo->IsChanneled() || spellInfo->IsAutoRepeatRangedSpell();
+    if (!requiresStationary ||
+        bot->HasAuraTypeWithAffectMask(SPELL_AURA_CAST_WHILE_WALKING, spellInfo))
+        return true;
+
+    if (!target)
+        target = bot;
+
+    // Keep approaching until the selected spell can reach its actual target.
+    // This also covers healing actions whose target is a friendly party member.
+    if (target != bot &&
+        (!target->IsInWorld() || target->GetMapId() != bot->GetMapId() ||
+         !bot->IsWithinCombatRange(target, spellInfo->GetMaxRange(spellInfo->IsPositive(), bot)) ||
+         !bot->IsWithinLOSInMap(target)))
+        return false;
+
+    if (bot->GetCurrentSpell(CURRENT_GENERIC_SPELL) ||
+        bot->GetCurrentSpell(CURRENT_CHANNELED_SPELL))
+        return false;
+
+    // Clear follow/chase so its movement generator cannot resume during a cast.
+    bot->GetMotionMaster()->Clear();
+    bot->StopMoving();
+    return !bot->isMoving();
 }
 
 bool CastSpellAction::isPossible()

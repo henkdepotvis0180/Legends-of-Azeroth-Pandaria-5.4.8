@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "checkpoint": 4,
+  "client_build": 18414,
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/",
+  "selection": "All shared base updates smaller than 160,000,000 bytes from the pinned recipe",
+  "expected_files": 12,
+  "expected_bytes": 209616589,
+  "files": [
+    {
+      "file": "Data/wow-update-base-16048.MPQ",
+      "bytes": 756189,
+      "sha256": "c6d4441f5bf9f8216755231935311272198f9c1f578bbb65f1bcf3aeeda1ecd1",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-16057.MPQ",
+      "bytes": 12806,
+      "sha256": "23d78b4b76260a2cd0a6341b77397147d70d19d83970b05ffa949f5fccf9b078",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-16357.MPQ",
+      "bytes": 9294,
+      "sha256": "58b283632c41076fa135109d7f30d1fd0898abe4e6b7a510dd63ba34f2375cc5",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-16650.MPQ",
+      "bytes": 137452881,
+      "sha256": "506a93415f83ec4b8cdec5e81740d53246997ce171403b1442186eedb02ccbef",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-16965.MPQ",
+      "bytes": 12853172,
+      "sha256": "25e39493062c5c2df27ed6f96669fc4368e1fe4eeb68fba82b8b3fb2b09bd0f0",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17116.MPQ",
+      "bytes": 563001,
+      "sha256": "813b1ac4d96015dd52691d6d7d83d52c4205829a9975beb10c54341c5f31cad9",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17345.MPQ",
+      "bytes": 15005476,
+      "sha256": "c2b6d05cee1f506327c8ac7e9f3c16925ac232b6e37588dded72e2d4e2bbbd58",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17538.MPQ",
+      "bytes": 4050067,
+      "sha256": "681050a2aa468474f280da6dcad76305ee088e10414545d291c33810bd7a0b55",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17645.MPQ",
+      "bytes": 29897097,
+      "sha256": "d4eb718ab9537930d53c23bfb9fd567c3dd60eebe1f65ac292353316fdb6c6fb",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17688.MPQ",
+      "bytes": 595649,
+      "sha256": "0c34a1dac2cb96f759d3c505dfaaa346439e29dc7d63ee9816dd47d2f7be8da2",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-17898.MPQ",
+      "bytes": 4551246,
+      "sha256": "234b2dbab82604e540f69e8468907f566c6b6c000799b9104b2c8e976ecc7cfe",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/wow-update-base-18273.MPQ",
+      "bytes": 3869711,
+      "sha256": "4f7c252071606da5cde73cbdbdebe8918cf8afd728d48518200438756d293228",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    }
+  ],
+  "errors": [],
+  "integrity_note": "Size and MPQ signature checked; recorded SHA-256 identifies received bytes, not an independent upstream digest.",
+  "date": "2026-10-18",
+  "durable_archive_saved": true,
+  "archive_filename": "MoP-18414-checkpoint-04-baseupdates-small.tar.gz",
+  "archive_validation": {
+    "archive_bytes": 206547886,
+    "archive_sha256": "e9100b3c2b291d273fbd971b1c4384e1de103f05fdb64c65c53bdaab3ebab004",
+    "archived_files_verified": 12,
+    "no_partial_downloads_in_archive": true
+  },
+  "extraction_performed": false
+}

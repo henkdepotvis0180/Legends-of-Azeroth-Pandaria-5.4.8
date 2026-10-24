@@ -6,6 +6,11 @@
 
 Unit* GrindTargetValue::Calculate()
 {
+    // Player-led companions assist through the attackers/DPS/tank target paths.
+    // Idle autonomous grinding is reserved for bots without a real player master.
+    if (botAI->HasRealPlayerMaster())
+        return nullptr;
+
     uint32 memberCount = 1;
     Group* group = bot->GetGroup();
     if (group)

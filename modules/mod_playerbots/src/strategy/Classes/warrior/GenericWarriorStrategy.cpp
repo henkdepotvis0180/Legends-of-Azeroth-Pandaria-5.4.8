@@ -29,7 +29,7 @@ public:
 
 private:
     ACTION_NODE(heroic_strike, "heroic strike");
-    ACTION_NODE_A(heroic_leap, "heroic leap", "melee");
+    ACTION_NODE_A(heroic_leap, "heroic leap", "reach melee");
     ACTION_NODE_A(charge, "charge", "heroic leap");
 
     ACTION_NODE(whirlwind, "whirlwind");

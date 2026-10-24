@@ -7,6 +7,7 @@
 #include "ChooseTargetActions.h"
 #include "FollowActions.h"
 #include "GenericActions.h"
+#include "GenericSpellActions.h"
 #include "PositionAction.h"
 #include "RtiAction.h"
 #include "MovementActions.h"
@@ -36,6 +37,9 @@ public:
         creators["mark rti"] = &ActionContext::mark_rti;
         creators["attack rti target"] = &ActionContext::attack_rti_target;
         creators["auto maintenance on levelup"] = &ActionContext::auto_maintenance_on_levelup;
+
+        creators["shoot"] = &ActionContext::shoot;
+        creators["combat formation move"] = &ActionContext::combat_formation_move;
 
         creators["tank face"] = &ActionContext::tank_face;
         creators["tank assist"] = &ActionContext::tank_assist;
@@ -76,6 +80,9 @@ private:
     static Action* mark_rti(PlayerbotAI* botAI) { return new MarkRtiAction(botAI); }
     static Action* attack_rti_target(PlayerbotAI* botAI) { return new AttackRtiTargetAction(botAI); }
     static Action* auto_maintenance_on_levelup(PlayerbotAI* botAI) { return new AutoMaintenanceOnLevelupAction(botAI); }
+
+    static Action* shoot(PlayerbotAI* botAI) { return new CastShootAction(botAI); }
+    static Action* combat_formation_move(PlayerbotAI* botAI) { return new CombatFormationMoveAction(botAI); }
 
     static Action* tank_face(PlayerbotAI* botAI) { return new TankFaceAction(botAI); }
     static Action* tank_assist(PlayerbotAI* botAI) { return new TankAssistAction(botAI); }

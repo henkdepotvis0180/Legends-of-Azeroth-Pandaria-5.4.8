@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "database": "auth",
+      "statements": 96,
+      "errors": "",
+      "returncode": 0
+    },
+    {
+      "database": "characters",
+      "statements": 565,
+      "errors": "",
+      "returncode": 0
+    },
+    {
+      "database": "world",
+      "statements": 73,
+      "errors": "",
+      "returncode": 0
+    },
+    {
+      "database": "playerbots",
+      "statements": 10,
+      "errors": "",
+      "returncode": 0
+    }
+  ]
+}

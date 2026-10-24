@@ -451,6 +451,17 @@ void PlayerbotHolder::OnBotLogin(Player* const bot)
     sPlayerbotsMgr->AddPlayerbotData(bot, true);
     playerBots[bot->GetGUID()] = bot;
     OnBotLoginInternal(bot);
+    sRandomPlayerbotMgr->ApplyNaturalProgression(bot);
+    BotFactory spellFactory(bot, bot->GetLevel());
+    if (spellFactory.LearnClassSpells())
+    {
+        if (PlayerbotAI* ai = GET_PLAYERBOT_AI(bot))
+        {
+            ai->GetAiObjectContext()->Reset();
+            ai->ResetStrategies();
+        }
+        bot->SaveToDB(false);
+    }
 
     PlayerbotAI* botAI = GET_PLAYERBOT_AI(bot);
     if (!botAI)

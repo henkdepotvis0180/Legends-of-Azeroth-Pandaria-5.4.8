@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "build_exit_code": 0,
+  "binary_sha256": "10b215f3dabbd901357c83221fe59d216a4b5b1829b0af4388b94a13249d7fa6",
+  "flag_probes": [
+    {
+      "flag": 1,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 2,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 3,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 4,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 5,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 6,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 7,
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "flag": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1
+    },
+    {
+      "flag": 8,
+      "exit_code": 1,
+      "expected_exit_code": 1
+    },
+    {
+      "flag": -1,
+      "exit_code": 1,
+      "expected_exit_code": 1
+    }
+  ],
+  "scope": "CLI parsing with empty input; camera-only extraction now accepted. Camera payloads are not yet extracted because world/model source archives are missing.",
+  "archive_bytes": 182582,
+  "archive_sha256": "ad23e77e380c0d8f48341c80795cbc518b698f68f6ecd94b36c87b70147ac6ed",
+  "durable_archive_saved": true,
+  "archive_filename": "MoP-18414-checkpoint-13-camera-tool.tar.gz",
+  "camera_payloads_extracted": 0,
+  "required_sources_pending": [
+    "Data/world.MPQ",
+    "model data"
+  ]
+}

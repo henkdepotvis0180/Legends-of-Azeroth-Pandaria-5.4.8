@@ -57,7 +57,6 @@ DBCStorage <BattlemasterListEntry> sBattlemasterListStore(BattlemasterListEntryf
 DBCStorage <BarberShopStyleEntry> sBarberShopStyleStore(BarberShopStyleEntryfmt);
 DBCStorage <CharStartOutfitEntry> sCharStartOutfitStore(CharStartOutfitEntryfmt);
 std::map<uint32, CharStartOutfitEntry const*> sCharStartOutfitMap;
-DBCStorage <CharSectionsEntry> sCharSectionsStore(CharSectionsEntryfmt);
 CharSectionsMap sCharSectionMap;
 DBCStorage <CharTitlesEntry> sCharTitlesStore(CharTitlesEntryfmt);
 DBCStorage <ChatChannelsEntry> sChatChannelsStore(ChatChannelsEntryfmt);
@@ -395,7 +394,7 @@ void DBCManager::LoadDBCStores(const std::string& dataPath, uint32 defaultLocale
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sBattlemasterListStore,       dbcPath, "BattleMasterList.dbc");//15595
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sBarberShopStyleStore,        dbcPath, "BarberShopStyle.dbc");//15595
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sCharStartOutfitStore,        dbcPath, "CharStartOutfit.dbc");//15595
-    LOAD_DBC(availableDbcLocales, bad_dbc_files, sCharSectionsStore,           dbcPath, "CharSections.dbc");//15595
+    LOAD_DBC(availableDbcLocales, bad_dbc_files, sChrSectionStore,             dbcPath, "CharSections.dbc");//15595
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sCharTitlesStore,             dbcPath, "CharTitles.dbc");//15595
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sChatChannelsStore,           dbcPath, "ChatChannels.dbc");//15595
     LOAD_DBC(availableDbcLocales, bad_dbc_files, sChrClassesStore,             dbcPath, "ChrClasses.dbc");//15595
@@ -599,7 +598,7 @@ void DBCManager::LoadDBCStores(const std::string& dataPath, uint32 defaultLocale
     for (CharStartOutfitEntry const* outfit : sCharStartOutfitStore)
         sCharStartOutfitMap[outfit->RaceID | (outfit->ClassID << 8) | (outfit->SexID << 16)] = outfit;
 
-    for (CharSectionsEntry const* entry : sCharSectionsStore)
+    for (CharSectionsEntry const* entry : sChrSectionStore)
         if (entry->RaceID && ((1 << (entry->RaceID - 1)) & RACEMASK_ALL_PLAYABLE) != 0) //ignore Nonplayable races
             sCharSectionMap.insert({ entry->BaseSection | (entry->SexID << 8) | (entry->RaceID << 16), entry });
 

@@ -133,6 +133,8 @@ public:
     void ChangeStrategy(std::string const name, BotState type);
     void ClearStrategies(BotState type);
     std::vector<std::string> GetStrategies(BotState type);
+    void StartDiagnosticTrace();
+    std::string GetDiagnosticTrace(BotState type) const;
 
     Player* GetBot() { return bot; }
     Player* GetMaster() { return master; }

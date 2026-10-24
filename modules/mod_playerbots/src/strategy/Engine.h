@@ -88,8 +88,13 @@ public:
     virtual ~Engine(void);
 
     bool testMode;
+    void StartDiagnosticTrace() { diagnosticTrace.clear(); diagnosticTicksRemaining = 20; }
+    std::string const& GetDiagnosticTrace() const { return diagnosticTrace; }
+
 
 private:
+    uint32 diagnosticTicksRemaining = 0;
+    std::string diagnosticTrace;
     bool MultiplyAndPush(NextAction** actions, float forceRelevance, bool skipPrerequisites, Event event,
                          const char* pushType);
     void Reset();

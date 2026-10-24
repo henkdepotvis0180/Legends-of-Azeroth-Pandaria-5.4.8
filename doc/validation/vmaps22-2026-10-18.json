@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "model_files": 12123,
+  "auxiliary_model_files": 4329,
+  "tree_files": 216,
+  "tile_files": 5150,
+  "gameobject_index_files": 1,
+  "gameobject_index_records": 4787,
+  "gameobject_displays": 4787,
+  "gameobject_unique_models": 3914,
+  "missing_gameobject_models": [],
+  "files_total": 21819,
+  "bytes": 1167534320,
+  "vmap_signature": "VMAP_4.3",
+  "validation": "All file signatures and SHA-256 hashes; complete gameobject-index record bounds and referenced-model existence. Native model/BIH and tree/tile checks recorded separately.",
+  "native_worldserver_start": false,
+  "errors": [],
+  "checkpoint": 22,
+  "native_validation": {
+    "exit_code": 0,
+    "elapsed_seconds": 4.04,
+    "native_worldserver_start": false,
+    "checker": "Production WorldModel::readFile, ModelSpawn::readFromFile and VMapManager2::loadMap; native model/group BIH loading, all tile reference existence, and map tree/tile loading.",
+    "models": 16452,
+    "trees": 216,
+    "tiles": 5150,
+    "spawn_references": 2259334,
+    "failed": 0
+  },
+  "native_negative_probe_passed": true,
+  "source_warning_messages": 110,
+  "unique_missing_sources": 92,
+  "source_warning_set_matches_historical": true,
+  "archive": {
+    "status": "passed",
+    "archive_file": "MoP-18414-checkpoint-22-vmaps.tar.gz",
+    "archive_bytes": 558849731,
+    "archive_sha256": "5b14bf0ef91ec3f99b5a5e3d4f2e080da01ae3bc377f5024afd1f9c82e3ef38d",
+    "archive_data_files_reread_and_hashed": 21819,
+    "parts": [
+      {
+        "file": "MoP-18414-checkpoint-22-vmaps.tar.gz.part001",
+        "bytes": 450000000,
+        "sha256": "e1e693037612a244276f617334d9b7dff3a98fee8b9358d17fcadea20a51fec7",
+        "durable_saved": true
+      },
+      {
+        "file": "MoP-18414-checkpoint-22-vmaps.tar.gz.part002",
+        "bytes": 108849731,
+        "sha256": "f5eadca425c6ae3fe636f2ea3f99061575a1d3ee05d00355beda19e345f5a89c",
+        "durable_saved": true
+      }
+    ]
+  },
+  "execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 12.1,
+    "native_worldserver_start": false
+  },
+  "negative_probe": {
+    "status": "passed",
+    "case": "Model retaining correct VMAP_4.3 signature but truncated before WMOD payload",
+    "exit_code": 1,
+    "native_model_rejected": true,
+    "output": "MODEL_FAILED \"damaged.vmo\"\nRESULT models=1 trees=0 tiles=0 references=0 failed=1\n"
+  },
+  "tool_provenance": {
+    "native_checker_binary_sha256": "f8afa98114bc8cfcf56e518f5a4d2b9bbd35cdd8804060e9638ccd6b50d97677",
+    "native_checker_source_sha256": "1c5901826317ea5cec20040cdaca957fc9976a4ee3cc3f914513ff1ad9fb7539",
+    "native_reader_functions": [
+      "WorldModel::readFile",
+      "ModelSpawn::readFromFile",
+      "VMapManager2::loadMap"
+    ],
+    "assembler_sha256": "99d159ad78ea8d11e20129e459ff4d9ea52295cb2b45e39d9b0ae6a4d27d9908",
+    "raw_checkpoint": 21,
+    "raw_archive_sha256": "f79216500b89da2e879043d8a4aaf48db2e9f5af673c888b61fb9ad2e8acc209",
+    "worldserver_start_tested": false
+  },
+  "full_file_manifest": "validation.json inside archive",
+  "full_file_manifest_sha256": "5333857d234ee259dc68b9f08ba049bc981523da93230203bbbfd7b4dd010675"
+}

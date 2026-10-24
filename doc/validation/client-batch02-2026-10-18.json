@@ -1,0 +1,156 @@
+{
+  "status": "passed",
+  "batch": "02-enus-and-windows-patches",
+  "client_build": 18414,
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/",
+  "source_manifest": "wow-18414-E68C6C849BBD16D2A8A153AFC865062F.mfil",
+  "manifest_md5_verified": true,
+  "manifest_sha256": "6bc449e79aa1fbb5d1ac93b5cf2ae6bc1822ecf399106be2b2c7261306a93e55",
+  "expected_files": 20,
+  "expected_bytes": 211882074,
+  "files": [
+    {
+      "file": "Data/base-Win.MPQ",
+      "bytes": 31096584,
+      "sha256": "01424a7d957792c74d93f24adfe84fa4a8772c22ffccb0c3895d17e65366d706",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16016.MPQ",
+      "bytes": 17117045,
+      "sha256": "75bb3a1c0e28c69d3eb3db70926c3cf2b6483aafe97a6f3b234d9c38c4cb3272",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16048.MPQ",
+      "bytes": 78228,
+      "sha256": "3fc8ed5f207364c9d5aebbe261ee49041cf41d288902dcf726c5d82590f13fe2",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16057.MPQ",
+      "bytes": 4048,
+      "sha256": "3dcbf4b99c258bc2ff7d634fb0ef0493c2e390ba1170160092a57ef23affe0ce",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16309.MPQ",
+      "bytes": 28185853,
+      "sha256": "cfdb6ec25d4709355171893875fa08c1c7114d14b185888335ec5f7e75378745",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16357.MPQ",
+      "bytes": 3597,
+      "sha256": "90e1a3cd4391753c319e3ec9860d459c020b0089a2987dc80e96a1a0731fb2b0",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16516.MPQ",
+      "bytes": 42934050,
+      "sha256": "ddca3af544315368179738428fa98746eff52fc532ddc5a7968586458ba68de2",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16650.MPQ",
+      "bytes": 426652,
+      "sha256": "f7f337fdc41862fd7441475275a3f5f472515b1c48698da5509d562c7230d8f4",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16844.MPQ",
+      "bytes": 18365842,
+      "sha256": "31e4a31513e7d357ab0a12e7f13c7a20d2effbfa778ac8125b2ef7c497b9159a",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-16965.MPQ",
+      "bytes": 304317,
+      "sha256": "d15c32892d04f1928801d1f326a5c68ff0b340e6d93cd9ec6719ad0c5704eff0",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17116.MPQ",
+      "bytes": 8763,
+      "sha256": "1cccec04f02e095f48c61f39392eb5d511f51be1ed7928c5783d62d74942a0b1",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17266.MPQ",
+      "bytes": 44857975,
+      "sha256": "d52ad407302a512fa918c7e805bcaad379fcc9a333372854148afa4e7a5bf675",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17325.MPQ",
+      "bytes": 6357736,
+      "sha256": "9ceb3f5fde4f9fed3ffbff117ef7f75eb565744e8e996cbc7a9513c7cde3c87e",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17345.MPQ",
+      "bytes": 31622,
+      "sha256": "ed167a2b3bea99a80098e99f4fe7bd4ebc1edc67edeafd46bb154be3c43013b9",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17538.MPQ",
+      "bytes": 90684,
+      "sha256": "69c5780a67c5891c3185b3f5531fb063898565d9671b6a308fe8150210af47c2",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17645.MPQ",
+      "bytes": 145060,
+      "sha256": "126e8df04e7387c23f60bf7a32e43d0dcce177ad30310441f4d37787c317529d",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17688.MPQ",
+      "bytes": 4547,
+      "sha256": "ff05d1dfe48193d86b499b1b770c250c92ec1651b0c963df5bdf6a0fe3d6880b",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-17898.MPQ",
+      "bytes": 53973,
+      "sha256": "c8906a26d18ee85af33c5fb6b5fda5831653e47ee97896b3f2cbe05082b524c8",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Data/enUS/wow-update-enUS-18273.MPQ",
+      "bytes": 86074,
+      "sha256": "62f235f283a5b99606987101126b3c23bb6becb575733832bc33ce5a3bb62ea2",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    },
+    {
+      "file": "Updates/wow-0-18414-Win-final.MPQ",
+      "bytes": 21729424,
+      "sha256": "bce0cc4189ae3e8b66ce5ea054a1cb667a4c50e496c5ab09261d16f2d48d671a",
+      "mpq_signature_hex": "4d50511a",
+      "reused_completed_file": false
+    }
+  ],
+  "errors": [],
+  "integrity_note": "Sizes and manifest MD5 match the pinned historical recipe. Recorded SHA-256 hashes identify received bytes; they are not independent upstream digests.",
+  "completed_at_utc": "2026-10-18T13:09:23Z"
+}

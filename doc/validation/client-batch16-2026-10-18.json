@@ -1,0 +1,607 @@
+{
+  "checkpoint": 16,
+  "status": "passed",
+  "source": "http://dist.blizzard.com.edgesuite.net/wow-pod-retail/EU/15890.direct/Data/expansion1.MPQ",
+  "source_file": "Data/expansion1.MPQ",
+  "expected_source_bytes": 1426915825,
+  "chunk_bytes": 450000000,
+  "expected_parts": 4,
+  "parts": [
+    {
+      "number": 1,
+      "filename": "MoP-18414-checkpoint-16-expansion1.MPQ.part001",
+      "start_byte": 0,
+      "end_byte": 449999999,
+      "bytes": 450000000,
+      "sha256": "9310dfc3c5f5e5c96bc129fc7df2313d386a9f5ea96cb7a6f66d05e97a2da8a9",
+      "durable_saved": true
+    },
+    {
+      "number": 2,
+      "filename": "MoP-18414-checkpoint-16-expansion1.MPQ.part002",
+      "start_byte": 450000000,
+      "end_byte": 899999999,
+      "bytes": 450000000,
+      "sha256": "08cc97b954f7978111d14abee96f174144cbbc5ed7acefedd99567ac868a7313",
+      "durable_saved": true
+    },
+    {
+      "number": 3,
+      "filename": "MoP-18414-checkpoint-16-expansion1.MPQ.part003",
+      "start_byte": 900000000,
+      "end_byte": 1349999999,
+      "bytes": 450000000,
+      "sha256": "82828eff365ab2ca4b6ccfd84d5410d17bb4d2f4249e6ceed20a14674e4fe903",
+      "durable_saved": true
+    },
+    {
+      "number": 4,
+      "filename": "MoP-18414-checkpoint-16-expansion1.MPQ.part004",
+      "start_byte": 1350000000,
+      "end_byte": 1426915824,
+      "bytes": 76915825,
+      "sha256": "f8c2844d1bd7a9bc89389c208ba6d09107118cbbc1e574a2bb2fb5d1edc4b831",
+      "durable_saved": true
+    }
+  ],
+  "integrity_note": "Exact HTTP ranges, sizes, MPQ signature and received SHA-256 hashes checked; no independent upstream SHA-256 available.",
+  "source_bytes": 1426915825,
+  "source_sha256": "6a22f89bfe37f15a5d46ffa4dba2cfbae6f93171b8ff51812ef37c63ec553ef6",
+  "assembled_source_verified": true,
+  "completed_at_utc": "2026-10-18T18:08:37Z",
+  "camera_probe": {
+    "status": "incomplete",
+    "required_unique": 27,
+    "passed": 26,
+    "missing": [
+      "cameras/flybydeathknight.m2"
+    ],
+    "newly_recovered": [
+      "cameras/flybybloodelf.m2",
+      "cameras/flybydraenei.m2",
+      "cameras/flybysunwell5man.m2"
+    ],
+    "previous_23_camera_hashes_unchanged": true,
+    "extractor_log_count": 31,
+    "extractor_count_note": "Includes repeated DBC model references, not unique required camera files.",
+    "native_start_tested": false,
+    "next_source": "Data/expansion2.MPQ"
+  },
+  "restore_instructions_nl": "Zet de vier afzonderlijk bewaarde brondelen naast elkaar. Controleer de groottes/hashes en voeg part001 tot en met part004 in volgorde binair samen tot Data/expansion1.MPQ. Controleer daarna de volledige bronhash. De assistent kan dit herstel uitvoeren. Dit herstelarchief bevat de 26 camerabestanden en controleverslagen; de grote brondata staat in de vier aparte delen.",
+  "recovery_archive": {
+    "file": "MoP-18414-checkpoint-16-expansion1-recovery.tar.gz",
+    "bytes": 36890,
+    "sha256": "198f6ac698e108033c8d6830eb0ad9183106b23b8d14cdac609b04af90ce7537",
+    "durable_saved": true,
+    "all_26_archived_camera_hashes_reread": true
+  },
+  "camera_validation": {
+    "status": "incomplete",
+    "dbc_rows": 34,
+    "unique_models": 27,
+    "passed": 26,
+    "missing": 1,
+    "invalid": 0,
+    "header_bytes_from_repository": 312,
+    "camera_struct_bytes": 116,
+    "native_start_tested": false,
+    "validation": "Required model presence, MD20 header, camera array, complete position/target timestamp and spline-array bounds. Not native worldserver loading or ingame validation.",
+    "models": [
+      {
+        "file": "cameras/abyssal_maw_camerafly_01.m2",
+        "dbc_ids": [
+          249
+        ],
+        "status": "passed",
+        "bytes": 2000,
+        "sha256": "cb297f8985dc1d1afb8df4edadce01ff9039216242e9ccb03deb10d06cd79ae2",
+        "tracks": {
+          "positions": [
+            14
+          ],
+          "target_positions": [
+            14
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/firelands_bridge_camera_01.m2",
+        "dbc_ids": [
+          306,
+          307,
+          308
+        ],
+        "status": "passed",
+        "bytes": 1360,
+        "sha256": "bc44d2a643e3d0d3f0cb803270630208548fcd48b398f09c9050cc3f0f8a9ca0",
+        "tracks": {
+          "positions": [
+            6
+          ],
+          "target_positions": [
+            6
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flyby_maelstrom.m2",
+        "dbc_ids": [
+          277
+        ],
+        "status": "passed",
+        "bytes": 1312,
+        "sha256": "2aaa104781f3bfc873902792c9e99ceae3519c5262f9fe09ef040004f0e5aed4",
+        "tracks": {
+          "positions": [
+            5
+          ],
+          "target_positions": [
+            6
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flyby_mogubridge_collapse.m2",
+        "dbc_ids": [
+          356
+        ],
+        "status": "passed",
+        "bytes": 4304,
+        "sha256": "2634f04db238c89c1c1bb65625f972943b35b43f36122452cf702918182160a2",
+        "tracks": {
+          "positions": [
+            43
+          ],
+          "target_positions": [
+            43
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flyby_mogubridge_collapse02.m2",
+        "dbc_ids": [
+          357
+        ],
+        "status": "passed",
+        "bytes": 1456,
+        "sha256": "1f9ad602d750ec427564bdbc45d366f6981b1e2f4a51bd03cb1fc62fcd14c237",
+        "tracks": {
+          "positions": [
+            7
+          ],
+          "target_positions": [
+            8
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flyby_mogusecret_door.m2",
+        "dbc_ids": [
+          355
+        ],
+        "status": "passed",
+        "bytes": 1488,
+        "sha256": "80dabb759cdc4d513c5bc0434043dc1a260e4cec58181ffc2f31f832263e2bbc",
+        "tracks": {
+          "positions": [
+            6
+          ],
+          "target_positions": [
+            9
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flyby_mogusecret_door02.m2",
+        "dbc_ids": [
+          358
+        ],
+        "status": "passed",
+        "bytes": 1296,
+        "sha256": "8c4120aa269def4f14c1bcf2a4374b2795029dc62158e587bfc2edecd2d7f2d4",
+        "tracks": {
+          "positions": [
+            7
+          ],
+          "target_positions": [
+            4
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybybloodelf.m2",
+        "dbc_ids": [
+          243
+        ],
+        "status": "passed",
+        "bytes": 1808,
+        "sha256": "af28aef1f91c6f3e98bbbddba4eb5f84418ecbf21c19166dddf17cfd8dba9cad",
+        "tracks": {
+          "positions": [
+            12
+          ],
+          "target_positions": [
+            12
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybydeathknight.m2",
+        "dbc_ids": [
+          246
+        ],
+        "status": "missing"
+      },
+      {
+        "file": "cameras/flybydraenei.m2",
+        "dbc_ids": [
+          244
+        ],
+        "status": "passed",
+        "bytes": 2208,
+        "sha256": "064967fafaaeaab4c5866775e5599d557006f31dde1c5c5660ccf401ddcdb80d",
+        "tracks": {
+          "positions": [
+            16
+          ],
+          "target_positions": [
+            18
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybydwarf.m2",
+        "dbc_ids": [
+          234
+        ],
+        "status": "passed",
+        "bytes": 1536,
+        "sha256": "2c9af59e1c17c7486f677e0f01819ac6205a0e04fa814abb6e7379f3d3f9bde2",
+        "tracks": {
+          "positions": [
+            7
+          ],
+          "target_positions": [
+            10
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybygateofthesettingsun.m2",
+        "dbc_ids": [
+          345
+        ],
+        "status": "passed",
+        "bytes": 1456,
+        "sha256": "85ffcdd583a156b55a9c5ae750d91476911666ab37c9657888df083de0b31e14",
+        "tracks": {
+          "positions": [
+            7
+          ],
+          "target_positions": [
+            8
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybygilneas_telescope.m2",
+        "dbc_ids": [
+          247
+        ],
+        "status": "passed",
+        "bytes": 3120,
+        "sha256": "408a816f8a2ce1ee65f16ed84e875d483aff02c980be7224b11c100485e7e1fb",
+        "tracks": {
+          "positions": [
+            22
+          ],
+          "target_positions": [
+            34
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybygilneasshort.m2",
+        "dbc_ids": [
+          248
+        ],
+        "status": "passed",
+        "bytes": 1232,
+        "sha256": "fa67823af87d13a334d1cf62552c348f18a1aebbdcb408bbd42656f2ee2e741c",
+        "tracks": {
+          "positions": [
+            4
+          ],
+          "target_positions": [
+            5
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybygnome.m2",
+        "dbc_ids": [
+          162,
+          278,
+          279
+        ],
+        "status": "passed",
+        "bytes": 2496,
+        "sha256": "7c1dfad043871b49acd189ead92aa8083731eb4293dcb7a03fca1ded61f1a6f8",
+        "tracks": {
+          "positions": [
+            20
+          ],
+          "target_positions": [
+            21
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybygoblin.m2",
+        "dbc_ids": [
+          288
+        ],
+        "status": "passed",
+        "bytes": 1920,
+        "sha256": "b6796ef78148181a7d3d3a7354cee4689bffd7db75619f3226125ba28c077cf3",
+        "tracks": {
+          "positions": [
+            12
+          ],
+          "target_positions": [
+            14
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybyhuman.m2",
+        "dbc_ids": [
+          142
+        ],
+        "status": "passed",
+        "bytes": 2272,
+        "sha256": "d5ab0300b86337a86bdf5451d8dc083016828b519def3577479b70f3acc078ca",
+        "tracks": {
+          "positions": [
+            16
+          ],
+          "target_positions": [
+            19
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybynightelf.m2",
+        "dbc_ids": [
+          122
+        ],
+        "status": "passed",
+        "bytes": 2144,
+        "sha256": "96d03d5941e18dcf197f0bf3ac2f162d2eca992e71e5eebb7a997ba838d09015",
+        "tracks": {
+          "positions": [
+            15
+          ],
+          "target_positions": [
+            15
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybyorc.m2",
+        "dbc_ids": [
+          235
+        ],
+        "status": "passed",
+        "bytes": 1888,
+        "sha256": "a9a7f920ea675f00f41197b8480af709a4f5e07af685b85925128ed0230fe3f2",
+        "tracks": {
+          "positions": [
+            12
+          ],
+          "target_positions": [
+            13
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybypandaren.m2",
+        "dbc_ids": [
+          343
+        ],
+        "status": "passed",
+        "bytes": 1664,
+        "sha256": "6670c3862700509ca4f7ba98c52e4228b36ba3516dc1e315d00debe6b375d9fa",
+        "tracks": {
+          "positions": [
+            10
+          ],
+          "target_positions": [
+            10
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybysunwell5man.m2",
+        "dbc_ids": [
+          245
+        ],
+        "status": "passed",
+        "bytes": 1936,
+        "sha256": "d2429537443f6f54a4dfbd8320ef767624d4ff252071da48a8ab3cfa3e8d2d55",
+        "tracks": {
+          "positions": [
+            12
+          ],
+          "target_positions": [
+            15
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybytauren.m2",
+        "dbc_ids": [
+          202
+        ],
+        "status": "passed",
+        "bytes": 2432,
+        "sha256": "a94e4287e5920fb15ab3e5a328262c3d8c81beef81d4c68131cfac93db4e8e03",
+        "tracks": {
+          "positions": [
+            17
+          ],
+          "target_positions": [
+            20
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybytroll.m2",
+        "dbc_ids": [
+          182,
+          250,
+          251,
+          252
+        ],
+        "status": "passed",
+        "bytes": 1856,
+        "sha256": "de7b0813aee3ed73770138cf49f1676d809a7ef95e9ceae805890bc9b89bf133",
+        "tracks": {
+          "positions": [
+            13
+          ],
+          "target_positions": [
+            12
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybyundead.m2",
+        "dbc_ids": [
+          2
+        ],
+        "status": "passed",
+        "bytes": 2176,
+        "sha256": "0b9a1a08e47ce6d74550a852ad12aaf017985a6fac426219a4496cba30905a68",
+        "tracks": {
+          "positions": [
+            17
+          ],
+          "target_positions": [
+            12
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/flybyworgen.m2",
+        "dbc_ids": [
+          253
+        ],
+        "status": "passed",
+        "bytes": 2656,
+        "sha256": "be7304f30adaad708a2894213eb593dee2e86be7f7fe86b80ea2c38bf8076d35",
+        "tracks": {
+          "positions": [
+            23
+          ],
+          "target_positions": [
+            22
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/palantirofazora.m2",
+        "dbc_ids": [
+          1
+        ],
+        "status": "passed",
+        "bytes": 1536,
+        "sha256": "2a6e32af854ed9653f6f2acab2424aa7922076f7c8a8f59471ec4dca068c459d",
+        "tracks": {
+          "positions": [
+            10
+          ],
+          "target_positions": [
+            7
+          ]
+        },
+        "version": 272
+      },
+      {
+        "file": "cameras/scry_cam.m2",
+        "dbc_ids": [
+          224
+        ],
+        "status": "passed",
+        "bytes": 1120,
+        "sha256": "54fd70fad032b4d19266824e4e44305f677058aff1d7ccf182fb9a708d6c31cb",
+        "tracks": {
+          "positions": [
+            1
+          ],
+          "target_positions": [
+            5
+          ]
+        },
+        "version": 272
+      }
+    ]
+  },
+  "validation_provenance": {
+    "extractor": {
+      "bytes": 382520,
+      "sha256": "10b215f3dabbd901357c83221fe59d216a4b5b1829b0af4388b94a13249d7fa6"
+    },
+    "cinematic_camera_dbc": {
+      "bytes": 1746,
+      "sha256": "aeeea0a187b34c9bb17e861d8bb2d524ba3c19b9b0ae171ba30bb94fb285ba0e"
+    },
+    "m2_structure": {
+      "bytes": 5879,
+      "sha256": "a140b339010047ed36381a9749634c51839e2cf3120d56e0d2deb12a5d642406"
+    },
+    "validator": {
+      "bytes": 3194,
+      "sha256": "ab9af2b955e6f9639af1c8d26ae5418fbdb7d5e4254972a18ffbf848a2cc37f5"
+    },
+    "repository_commit": "07507b276a3fb9e9e00344176c21ab4f0d7d57b7",
+    "extractor_options": [
+      "-b",
+      "18414",
+      "-e",
+      "4"
+    ],
+    "baseline_camera_hashes_checked": 23
+  },
+  "input_restoration": {
+    "report": "input-restoration16-2026-10-18.json",
+    "status": "passed",
+    "source_files": 42,
+    "source_bytes": 9450942824,
+    "old_source_redownloads": 0
+  }
+}

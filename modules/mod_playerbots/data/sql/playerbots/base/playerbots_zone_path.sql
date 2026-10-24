@@ -1,7 +1,4 @@
--- Listage de la structure de la base pour mop_playerbots
-CREATE DATABASE IF NOT EXISTS `mop_playerbots` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `mop_playerbots`;
-
+-- Import into the playerbots database selected by the caller.
 -- Listage de la structure de table mop_playerbots. playerbots_zone_path
 CREATE TABLE IF NOT EXISTS `playerbot_zone_path` (
   `Zone` int(11) NOT NULL DEFAULT '0',

@@ -827,6 +827,18 @@ std::vector<std::string> PlayerbotAI::GetStrategies(BotState type)
     return e->GetStrategies();
 }
 
+void PlayerbotAI::StartDiagnosticTrace()
+{
+    for (uint8 i = 0; i < BOT_STATE_MAX; ++i)
+        if (_engines[i])
+            _engines[i]->StartDiagnosticTrace();
+}
+
+std::string PlayerbotAI::GetDiagnosticTrace(BotState type) const
+{
+    return _engines[type] ? _engines[type]->GetDiagnosticTrace() : std::string();
+}
+
 void PlayerbotAI::DoNextAction(bool min)
 {
     if (!bot->IsInWorld() || bot->IsBeingTeleported() || (GetMaster() && GetMaster()->IsBeingTeleported()))
@@ -1979,16 +1991,9 @@ bool PlayerbotAI::CanCastSpell(uint32 spellid, Unit* target, bool checkHasSpell,
         return false;
     }
 
-    uint32 CastingTime = !spellInfo->IsChanneled() ? spellInfo->CalcCastTime(bot->GetLevel()) : spellInfo->GetDuration();
-    // bool interruptOnMove = spellInfo->InterruptFlags & SPELL_INTERRUPT_FLAG_MOVEMENT;
-    if ((CastingTime || spellInfo->IsAutoRepeatRangedSpell()) && bot->isMoving())
-    {
-        //if (!sPlayerbotAIConfig->logInGroupOnly || (bot->GetGroup() && HasRealPlayerMaster()))
-        {
-            //TC_LOG_DEBUG("playerbots", "Casting time and bot is moving - target name: {}, spellid: {}, bot name: {}", target->GetName().c_str(), spellid, bot->GetName().c_str());
-        }
-        return false;
-    }
+    // Movement is preparable, like facing and standing. Let CheckCast below
+    // classify the spell; the selected CastSpellAction stops in range before
+    // execution. Rejecting movement here prevents that action from ever running.
 
     if (!itemTarget)
     {

@@ -1,0 +1,1362 @@
+{
+  "status": "classified_and_world_database_references_checked",
+  "unique_sources": 92,
+  "map_sources": 72,
+  "model_sources": 20,
+  "sources": [
+    {
+      "source": "Aaaaaaaaa\\Testdonotcommit4.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        8670
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 1,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "Character\\Naga_\\Female\\Nagafemaledeathskeleton.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        9438
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "Character\\Naga_\\Male\\Nagamaledeathskeleton.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        9437
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "Wingv2_Elevator_Onyxia.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        10012
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 1,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Detail\\Drkbus02.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        1367
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Detail\\Drkbus04.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        1368
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Dreaming\\Passivedoodads\\Flowers\\Dreambellflower02.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        7324
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Dreaming\\Passivedoodads\\Flowers\\Dreampurpleflower03.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        8383
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 1,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Dreaming\\Passivedoodads\\Flowers\\Dreamspinningflower01.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        7895
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 1,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion01\\Doodads\\Coilfang\\Activedoodads\\Energytower\\Coilfang_Towers_E_Particle.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion01\\Doodads\\Hellfirecitadel\\Demonwing\\Passivedoodads\\Summon_Door\\Hellfire_Dw_Summondoor.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        6856
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Shield_01.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_01.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_02.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion02\\Doodads\\Generic\\Vrykul\\Weapons\\Vr_Bm__Sword_03.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Expansion03\\Doodads\\Twilighthammer\\Banners\\Twilighthammerbanner01.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        9629
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 2,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Generic\\Quilboar\\Passive Doodads\\Leantos\\Razorfen_Leanto03.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Goober\\Testdonotcommit8.m2",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        8545
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 1,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Maps\\Collin\\Collin.wdt",
+      "kind": "map_wdt",
+      "directory": "Collin",
+      "map_id": 42,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\CraigTest\\CraigTest.wdt",
+      "kind": "map_wdt",
+      "directory": "CraigTest",
+      "map_id": 597,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\DarkmoonCarousel\\DarkmoonCarousel.wdt",
+      "kind": "map_wdt",
+      "directory": "DarkmoonCarousel",
+      "map_id": 1113,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Deephomeceiling\\Deephomeceiling.wdt",
+      "kind": "map_wdt",
+      "directory": "Deephomeceiling",
+      "map_id": 660,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\ElevatorSpawnTest\\ElevatorSpawnTest.wdt",
+      "kind": "map_wdt",
+      "directory": "ElevatorSpawnTest",
+      "map_id": 651,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\ExteriorTest\\ExteriorTest.wdt",
+      "kind": "map_wdt",
+      "directory": "ExteriorTest",
+      "map_id": 573,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\GoldRushBG\\GoldRushBG_28_34_obj0.adt, size = 0!",
+      "kind": "empty_or_unreadable_adt",
+      "directory": "GoldRushBG",
+      "map_id": 1105,
+      "map_type": 3,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 6,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 20,
+      "generated_vmap_tree": true
+    },
+    {
+      "source": "World\\Maps\\GoldRushBG\\GoldRushBG_29_34_obj0.adt, size = 0!",
+      "kind": "empty_or_unreadable_adt",
+      "directory": "GoldRushBG",
+      "map_id": 1105,
+      "map_type": 3,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 6,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 20,
+      "generated_vmap_tree": true
+    },
+    {
+      "source": "World\\Maps\\GoldRushBG\\GoldRushBG_30_34_obj0.adt, size = 0!",
+      "kind": "empty_or_unreadable_adt",
+      "directory": "GoldRushBG",
+      "map_id": 1105,
+      "map_type": 3,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 6,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 20,
+      "generated_vmap_tree": true
+    },
+    {
+      "source": "World\\Maps\\GoldRushBG\\GoldRushBG_31_34_obj0.adt, size = 0!",
+      "kind": "empty_or_unreadable_adt",
+      "directory": "GoldRushBG",
+      "map_id": 1105,
+      "map_type": 3,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 6,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 20,
+      "generated_vmap_tree": true
+    },
+    {
+      "source": "World\\Maps\\LevelDesignLand-DevOnly\\LevelDesignLand-DevOnly.wdt",
+      "kind": "map_wdt",
+      "directory": "LevelDesignLand-DevOnly",
+      "map_id": 1060,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\MistsCTF3\\MistsCTF3.wdt",
+      "kind": "map_wdt",
+      "directory": "MistsCTF3",
+      "map_id": 1010,
+      "map_type": 3,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Monastery\\Monastery.wdt",
+      "kind": "map_wdt",
+      "directory": "Monastery",
+      "map_id": 44,
+      "map_type": 1,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 1,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\PVPZone02\\PVPZone02.wdt",
+      "kind": "map_wdt",
+      "directory": "PVPZone02",
+      "map_id": 37,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 1,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\QA_DVD\\QA_DVD.wdt",
+      "kind": "map_wdt",
+      "directory": "QA_DVD",
+      "map_id": 606,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\ScottTest\\ScottTest.wdt",
+      "kind": "map_wdt",
+      "directory": "ScottTest",
+      "map_id": 25,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\StormwindPrison\\StormwindPrison.wdt",
+      "kind": "map_wdt",
+      "directory": "StormwindPrison",
+      "map_id": 35,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 1
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Sunwell5Man\\Sunwell5Man.wdt",
+      "kind": "map_wdt",
+      "directory": "Sunwell5Man",
+      "map_id": 598,
+      "map_type": 1,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 1,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\TheBattleforGilneas\\TheBattleforGilneas.wdt",
+      "kind": "map_wdt",
+      "directory": "TheBattleforGilneas",
+      "map_id": 728,
+      "map_type": 1,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport 2033864\\Transport 2033864.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport 2033864",
+      "map_id": 766,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport 2033865\\Transport 2033865.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport 2033865",
+      "map_id": 767,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport 203732\\Transport 203732.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport 203732",
+      "map_id": 747,
+      "map_type": 0,
+      "world_references": {
+        "creature": 61,
+        "gameobject": 4,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport 203861\\Transport 203861.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport 203861",
+      "map_id": 762,
+      "map_type": 0,
+      "world_references": {
+        "creature": 4,
+        "gameobject": 5,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport 203862\\Transport 203862.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport 203862",
+      "map_id": 763,
+      "map_type": 0,
+      "world_references": {
+        "creature": 4,
+        "gameobject": 5,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport164871\\Transport164871.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport164871",
+      "map_id": 591,
+      "map_type": 0,
+      "world_references": {
+        "creature": 21,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport175080\\Transport175080.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport175080",
+      "map_id": 589,
+      "map_type": 0,
+      "world_references": {
+        "creature": 11,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport176231\\Transport176231.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport176231",
+      "map_id": 584,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport176244\\Transport176244.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport176244",
+      "map_id": 582,
+      "map_type": 0,
+      "world_references": {
+        "creature": 6,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport176310\\Transport176310.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport176310",
+      "map_id": 588,
+      "map_type": 0,
+      "world_references": {
+        "creature": 10,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport176495\\Transport176495.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport176495",
+      "map_id": 590,
+      "map_type": 0,
+      "world_references": {
+        "creature": 11,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport177233\\Transport177233.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport177233",
+      "map_id": 587,
+      "map_type": 0,
+      "world_references": {
+        "creature": 9,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport181645\\Transport181645.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport181645",
+      "map_id": 586,
+      "map_type": 0,
+      "world_references": {
+        "creature": 6,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport186238\\Transport186238.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport186238",
+      "map_id": 592,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport187038\\Transport187038.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport187038",
+      "map_id": 594,
+      "map_type": 0,
+      "world_references": {
+        "creature": 24,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport187263\\Transport187263.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport187263",
+      "map_id": 596,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport192241\\Transport192241.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport192241",
+      "map_id": 622,
+      "map_type": 0,
+      "world_references": {
+        "creature": 56,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport192242\\Transport192242.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport192242",
+      "map_id": 623,
+      "map_type": 0,
+      "world_references": {
+        "creature": 63,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197195\\Transport197195.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197195",
+      "map_id": 662,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197347\\Transport197347.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197347",
+      "map_id": 672,
+      "map_type": 0,
+      "world_references": {
+        "creature": 30,
+        "gameobject": 4,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197348\\Transport197348.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197348",
+      "map_id": 673,
+      "map_type": 0,
+      "world_references": {
+        "creature": 29,
+        "gameobject": 4,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197349-2\\Transport197349-2.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197349-2",
+      "map_id": 674,
+      "map_type": 0,
+      "world_references": {
+        "creature": 11,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197349\\Transport197349.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197349",
+      "map_id": 712,
+      "map_type": 0,
+      "world_references": {
+        "creature": 28,
+        "gameobject": 3,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport197350\\Transport197350.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport197350",
+      "map_id": 713,
+      "map_type": 0,
+      "world_references": {
+        "creature": 55,
+        "gameobject": 4,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport200100\\Transport200100.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport200100",
+      "map_id": 738,
+      "map_type": 0,
+      "world_references": {
+        "creature": 4,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport200101\\Transport200101.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport200101",
+      "map_id": 739,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport200102\\Transport200102.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport200102",
+      "map_id": 740,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport200103\\Transport200103.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport200103",
+      "map_id": 741,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport201834\\Transport201834.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport201834",
+      "map_id": 718,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203729\\Transport203729.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203729",
+      "map_id": 742,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203730\\Transport203730.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203730",
+      "map_id": 743,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203858\\Transport203858.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203858",
+      "map_id": 748,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203859\\Transport203859.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203859",
+      "map_id": 749,
+      "map_type": 0,
+      "world_references": {
+        "creature": 12,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203860\\Transport203860.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203860",
+      "map_id": 750,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport203863\\Transport203863.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport203863",
+      "map_id": 765,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport20808\\Transport20808.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport20808",
+      "map_id": 593,
+      "map_type": 0,
+      "world_references": {
+        "creature": 8,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport218599\\Transport218599.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport218599",
+      "map_id": 1132,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport218600\\Transport218600.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport218600",
+      "map_id": 1133,
+      "map_type": 0,
+      "world_references": {
+        "creature": 11,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_AllianceAirshipBG\\Transport_AllianceAirshipBG.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_AllianceAirshipBG",
+      "map_id": 641,
+      "map_type": 0,
+      "world_references": {
+        "creature": 19,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_HordeAirshipBG\\Transport_HordeAirshipBG.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_HordeAirshipBG",
+      "map_id": 642,
+      "map_type": 0,
+      "world_references": {
+        "creature": 19,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Menethil_Valgarde\\Transport_Menethil_Valgarde.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Menethil_Valgarde",
+      "map_id": 612,
+      "map_type": 0,
+      "world_references": {
+        "creature": 6,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Moa'ki_Kamagua\\Transport_Moa'ki_Kamagua.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Moa'ki_Kamagua",
+      "map_id": 621,
+      "map_type": 0,
+      "world_references": {
+        "creature": 1,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Moa'ki_Unu'pe\\Transport_Moa'ki_Unu'pe.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Moa'ki_Unu'pe",
+      "map_id": 620,
+      "map_type": 0,
+      "world_references": {
+        "creature": 2,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Orgrimmar_Warsong_Hold\\Transport_Orgrimmar_Warsong_Hold.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Orgrimmar_Warsong_Hold",
+      "map_id": 613,
+      "map_type": 0,
+      "world_references": {
+        "creature": 7,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Orgrimmar_to_Thunderbluff\\Transport_Orgrimmar_to_Thunderbluff.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Orgrimmar_to_Thunderbluff",
+      "map_id": 647,
+      "map_type": 0,
+      "world_references": {
+        "creature": 12,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Siege_of_Orgrimmar_Alliance\\Transport_Siege_of_Orgrimmar_Alliance.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Siege_of_Orgrimmar_Alliance",
+      "map_id": 1172,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Siege_of_Orgrimmar_Horde\\Transport_Siege_of_Orgrimmar_Horde.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Siege_of_Orgrimmar_Horde",
+      "map_id": 1173,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Stormwind_Valiance_Keep\\Transport_Stormwind_Valiance_Keep.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Stormwind_Valiance_Keep",
+      "map_id": 614,
+      "map_type": 0,
+      "world_references": {
+        "creature": 6,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\Transport_Tirisfal _Vengeance_Landing\\Transport_Tirisfal _Vengeance_Landing.wdt",
+      "kind": "transport_wdt",
+      "directory": "Transport_Tirisfal _Vengeance_Landing",
+      "map_id": 610,
+      "map_type": 0,
+      "world_references": {
+        "creature": 7,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\development\\development.wdt",
+      "kind": "map_wdt",
+      "directory": "development",
+      "map_id": 451,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 50,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\development_nonweighted\\development_nonweighted.wdt",
+      "kind": "map_wdt",
+      "directory": "development_nonweighted",
+      "map_id": 605,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\test\\test.wdt",
+      "kind": "map_wdt",
+      "directory": "test",
+      "map_id": 13,
+      "map_type": 0,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 1,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Maps\\unused\\unused.wdt",
+      "kind": "map_wdt",
+      "directory": "unused",
+      "map_id": 627,
+      "map_type": 1,
+      "world_references": {
+        "creature": 0,
+        "gameobject": 0,
+        "instance_template": 0,
+        "game_tele": 0,
+        "areatrigger_teleport": 0
+      },
+      "generated_map_tiles": 0,
+      "generated_vmap_tree": false
+    },
+    {
+      "source": "World\\Wmo\\Band\\Final_Stage.wmo",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        7424
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 3,
+      "gameobject_spawn_references": 0
+    },
+    {
+      "source": "World\\Wmo\\Test\\Blendedmattest.wmo",
+      "kind": "model_or_wmo",
+      "gameobject_display_ids": [
+        10801
+      ],
+      "creature_model_data_ids": [],
+      "gameobject_template_references": 0,
+      "gameobject_spawn_references": 0
+    }
+  ],
+  "categories": {
+    "model_or_wmo": 20,
+    "map_wdt": 19,
+    "empty_or_unreadable_adt": 4,
+    "transport_wdt": 49
+  },
+  "scope": "Missing sources from actual extraction log, matched to extracted Map.dbc and display/model DBCs, then queried against fresh moprun_world. Zero DB references do not exclude script-spawned objects or instances. No synthetic source files were added.",
+  "checked_world_tables": {
+    "creature": "map",
+    "gameobject": "map",
+    "instance_template": "map",
+    "game_tele": "map",
+    "areatrigger_teleport": "target_map"
+  }
+}

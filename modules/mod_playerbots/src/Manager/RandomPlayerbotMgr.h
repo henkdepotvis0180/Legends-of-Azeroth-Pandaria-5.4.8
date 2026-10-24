@@ -83,6 +83,10 @@ public:
     /// <param name="size"></param>
     void Reserve(const uint32 size);
     void UpdateAIInternal(uint32 elapsed, bool minimal = false) override;
+    bool HasRealPlayerOnline() const;
+    bool ShouldAutoLoginBots() const;
+    bool IsAllowedProgressionBot(uint32 bot) const;
+    void ApplyNaturalProgression(Player* bot);
 
 public:
     bool IsRandomBot(Player* bot);

@@ -56,6 +56,9 @@ public:
 
     uint32 openGoSpell;
     bool randomBotAutologin, disableRandomLevels;
+    bool randomBotLoginOnlyWithPlayers;
+    bool randomBotNaturalProgression;
+    uint32 randomBotStartingMinLevel, randomBotStartingMaxLevel;
     uint32 randomBotMaxLevel, randomBotMinLevel;
     float randomBotMaxLevelChance;
     uint32 minRandomBots, maxRandomBots, maxAddedBotsPerClass, maxAddedBots;

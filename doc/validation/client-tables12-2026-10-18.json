@@ -1,0 +1,241 @@
+{
+  "status": "passed",
+  "scope": "Required active core tables: headers/payload sizes, formats, minimum record width and string offset bounds; eight 5.4.8 marker IDs. Non-required table issues are reported separately. No native server start or gameplay test.",
+  "dbc_files": 393,
+  "db2_files": 58,
+  "required_dbc_files": 174,
+  "required_db2_files": 26,
+  "extra_record_bytes_notes": [
+    {
+      "file": "Achievement_Criteria.dbc",
+      "record_bytes": 96,
+      "format_bytes": 92
+    },
+    {
+      "file": "CriteriaTree.dbc",
+      "record_bytes": 40,
+      "format_bytes": 32
+    },
+    {
+      "file": "SpellItemEnchantmentCondition.dbc",
+      "record_bytes": 72,
+      "format_bytes": 64
+    }
+  ],
+  "non_required_table_issues": [
+    {
+      "file": "CreatureDifficulty.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "DanceMoves.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "ItemUpgrade.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellActivationOverlay_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellAuraOptions_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellAuraRestrictions_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellAuraVisibility_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellCastingRequirements_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellCategories_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellClassOptions_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellCooldowns_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellEffectCameraShakes.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellEffect_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellEquippedItems_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellInterrupts_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellLearnSpell_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellLevels_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellMisc_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellMissile.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellMissileMotion.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellMissile_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellPower_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellReagents.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellReagents_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellRuneCost_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellScaling_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellShapeshift_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellTargetRestrictions_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellTotems_internal.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellVisual.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellVisualEffectName.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellVisualKit.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellVisualKitAreaModel.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    },
+    {
+      "file": "SpellVisualKitModelAttach.dbc",
+      "bytes": 0,
+      "issue": "Truncated header"
+    }
+  ],
+  "version_markers": {
+    "BattlePetAbility.db2": 1238,
+    "BattlePetSpecies.db2": 1386,
+    "BattlePetState.db2": 176,
+    "BroadcastText.db2": 77161,
+    "Item.db2": 112353,
+    "ItemExtendedCost.db2": 5280,
+    "QuestPackageItem.db2": 2256,
+    "SceneScript.db2": 11156
+  },
+  "checkpoint": 12,
+  "extractor_exit_code": 0,
+  "root_db2_files": 0,
+  "localized_db2_files": 58,
+  "table_payload_bytes": 160549940,
+  "native_worldserver_retested": false,
+  "date": "2026-10-18",
+  "durable_archive_saved": true,
+  "archive_filename": "MoP-18414-checkpoint-12-dbc-db2.tar.gz",
+  "archive_validation": {
+    "archive_bytes": 22840037,
+    "archive_sha256": "75f616407cf89298da974f0561ec93f7b3719bd3ce8e26ce616a18cbafb397a0",
+    "archived_table_files_verified": 451
+  },
+  "negative_tests": {
+    "status": "passed",
+    "cases": {
+      "required_truncated": {
+        "rejected": true,
+        "exit_code": 1,
+        "expected_error": "Truncated header"
+      },
+      "string_out_of_bounds": {
+        "rejected": true,
+        "exit_code": 1,
+        "expected_error": "String offset out of bounds"
+      },
+      "misplaced_db2": {
+        "rejected": true,
+        "exit_code": 1,
+        "expected_error": "DB2 outside enUS directory"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "date": "2026-10-18",
+  "scope": "Cleanup statements from setup_mop_databases.py executed against real upstream character and combined bot base dumps; not a full world import or native server startup",
+  "mysql_version": "8.0.46-0ubuntu0.24.04.3",
+  "before": {
+    "characters": 5,
+    "inventory_rows": 33,
+    "random_bot_events": 2001
+  },
+  "after": {
+    "characters": 0,
+    "inventory_rows": 0,
+    "random_bot_events": 0
+  },
+  "all_character_runtime_tables_empty_before_module_import": true,
+  "character_update_records_preserved": true,
+  "static_bot_texts_preserved": true,
+  "bot_names_after_module_import": 100000
+}
